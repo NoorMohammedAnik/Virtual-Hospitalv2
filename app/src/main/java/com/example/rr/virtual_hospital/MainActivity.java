@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.rr.virtual_hospital.maps.MapsActivity;
+
 public class MainActivity extends AppCompatActivity {
     Button bloodBank,callForHelp,firstAid,hospital,map,diago;
 
@@ -64,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
         map.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent in = new Intent(MainActivity.this,NearestActivity.class);
+                Intent in = new Intent(MainActivity.this,MapsActivity.class);
                 startActivity(in);
                 Toast.makeText(MainActivity.this, "Nearest Hospital", Toast.LENGTH_SHORT).show();
             }
