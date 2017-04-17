@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:weightSum="1000"
+    android:background="#663c3c"
+    android:layout_height="match_parent"
+    tools:context="com.example.rr.virtual_hospital.FirstAidActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+
+            <Button
+                android:id="@+id/Allergies"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:textStyle="bold"
+                android:layout_marginTop="35dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button3"
+                android:text="QREX" />
+
+            <Button
+                android:id="@+id/Alzheimer"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button3"
+                android:text="Popular Diagnostic Center Chittagong" />
+
+            <Button
+                android:id="@+id/Acd"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button3"
+                android:text="IBN SINA" />
+
+            <Button
+                android:id="@+id/AclIn"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button3"
+                android:text="Labaid" />
+
+            <Button
+                android:id="@+id/AcNum"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button3"
+                android:text="MAX" />
+
+            <Button
+                android:id="@+id/Adeno"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button3"
+                android:text="Metro" />
+
+            <Button
+                android:id="@+id/Alcholisom"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button3"
+                android:text="Lanset"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/Appendcs"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginBottom="20dp"
+                android:textStyle="bold"
+                android:background="@drawable/button3"
+                android:text="Epic Health Care" />
+
+            <Button
+                android:id="@+id/Asthma"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button3"
+                android:text="CSCR" />
+
+            <Button
+                android:id="@+id/AvianFlu"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button3"
+                android:text="Royal Hospital" />
+
+            <Button
+                android:id="@+id/BackPain"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button3"
+                android:text="Medical Center" />
+
+            <Button
+                android:id="@+id/BloodClots"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button3"
+                android:text="Chevron" />
+
+            <Button
+                android:id="@+id/Brochts"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button3"
+                android:text="Sensiv" />
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

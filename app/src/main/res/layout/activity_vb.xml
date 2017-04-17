@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context="com.example.rr.virtual_hospital.VbActivity">
+
+    <EditText
+        android:id="@+id/Username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="13"
+        android:drawableLeft="@drawable/user"
+        android:hint="Username"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"
+        android:textColorHint="@android:color/black"
+        android:textColorHighlight="@android:color/black"
+        android:alpha="0.67"
+        android:inputType="textEmailAddress"
+        tools:layout_editor_absoluteX="83dp"
+        tools:layout_editor_absoluteY="63dp" />
+
+    <EditText
+        android:id="@+id/Pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0.67"
+        android:drawableLeft="@drawable/icon"
+        android:ems="13"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColorHighlight="@android:color/black"
+        android:textColorHint="@android:color/black"
+        tools:layout_editor_absoluteX="83dp"
+        tools:layout_editor_absoluteY="157dp" />
+
+    <Button
+        android:id="@+id/Submit"
+        android:layout_width="126dp"
+        android:layout_height="52dp"
+        android:text="Submit"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="120dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:background="@drawable/buuton2"
+        tools:layout_editor_absoluteX="129dp"
+        tools:layout_editor_absoluteY="251dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Here?"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="142dp"
+        android:textColor="#FFFF"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="353dp" />
+
+    <Button
+        android:id="@+id/Sign"
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="124dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/buuton2"
+        android:text="Sign Up"
+        android:textColor="@android:color/holo_red_dark"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="394dp" />
+</LinearLayout>
