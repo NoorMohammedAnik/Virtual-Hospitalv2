@@ -6,15 +6,15 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/background"
-    tools:context="com.example.rr.virtual_hospital.VbActivity">
+    tools:context="com.example.rr.virtual_hospital.profile.VbActivity">
 
     <EditText
-        android:id="@+id/Username"
+        android:id="@+id/Usermobile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="13"
         android:drawableLeft="@drawable/user"
-        android:hint="Username"
+        android:hint="Enter Your Mobile Number"
         android:layout_marginTop="50dp"
         android:layout_marginLeft="50dp"
         android:textColorHint="@android:color/black"
@@ -33,7 +33,7 @@
         android:ems="13"
         android:layout_marginTop="50dp"
         android:layout_marginLeft="50dp"
-        android:hint="Password"
+        android:hint="Enter Your Password"
         android:inputType="textPassword"
         android:textColorHighlight="@android:color/black"
         android:textColorHint="@android:color/black"
