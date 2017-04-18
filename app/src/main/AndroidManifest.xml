@@ -19,7 +19,6 @@
         <activity android:name=".VbActivity" />
         <activity android:name=".FirstAidActivity" />
         <activity android:name=".CallActivity" />
-        <activity android:name=".HospitalActivity" />
         <activity android:name=".DiaActivity" />
         <activity android:name=".NearestActivity" />
         <activity android:name=".SplashActivity">
@@ -44,7 +43,11 @@
 
         <activity
             android:name=".maps.MapsActivity"
-            android:label="@string/title_activity_maps"></activity>
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".maps.bloodbank.ActivityDonorlist" />
+        <activity android:name=".hospital.HospitalListActivity" />
+        <activity android:name=".hospital.HospitalDetailsActivity" />
+        <activity android:name=".RegistrationActivity"></activity>
     </application>
 
 </manifest>

@@ -11,8 +11,6 @@
         android:orientation="vertical"
         android:scrollbarAlwaysDrawVerticalTrack="true">
 
-
-
         <TextView
             android:id="@+id/login_title"
             android:layout_width="fill_parent"
@@ -20,7 +18,7 @@
             android:layout_marginBottom="16dp"
             android:layout_marginTop="22dp"
             android:gravity="center_horizontal"
-            android:text="Account Login"
+            android:text="Account Registration"
             android:textColor="#fff"
             android:textSize="26sp"
             android:textStyle="bold" />
@@ -50,11 +48,11 @@
                     <EditText
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
-                        android:drawableLeft="@drawable/cell"
+                        android:drawableLeft="@drawable/account"
                         android:singleLine="true"
-                        android:hint="Cell"
+                        android:hint=" Name"
                         android:inputType="textEmailAddress"
-                        android:id="@+id/txt_email" />
+                        android:id="@+id/txt_name" />
                 </android.support.design.widget.TextInputLayout>
 
                 <android.support.design.widget.TextInputLayout
@@ -64,45 +62,62 @@
                     <EditText
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
+                        android:drawableLeft="@drawable/cell"
                         android:singleLine="true"
-                        android:drawableLeft="@drawable/lock"
-
-                        android:hint="Password"
-                        android:inputType="textPassword"
-                        android:id="@+id/txt_password" />
+                        android:hint=" Cell"
+                        android:inputType="textEmailAddress"
+                        android:id="@+id/txt_cell" />
                 </android.support.design.widget.TextInputLayout>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="right"
-                    android:paddingTop="20dp"
-                    android:textStyle="italic"
-                    android:textSize="15dp"
 
-                    android:text="Forgot Password?"
-                    android:id="@+id/txt_forgotPassword" />
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/lock"
+                        android:singleLine="true"
+                        android:hint=" Password"
+                        android:id="@+id/txt_password"
+                        android:inputType="textPassword" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </android.support.design.widget.TextInputLayout>
+
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </android.support.design.widget.TextInputLayout>
 
 
                 <com.github.rubensousa.raiflatbutton.RaiflatButton
-                    android:id="@+id/btn_login"
-                    style="@style/Base.Widget.AppCompat.Button.Colored"
-                    android:layout_width="150dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="Login" />
-
-
-                <com.github.rubensousa.raiflatbutton.RaiflatButton
-                    android:id="@+id/btn_register"
+                    android:id="@+id/btnSignup"
                     style="@style/Base.Widget.AppCompat.Button.Colored"
                     android:layout_width="152dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="Register" />
+                    android:text="Sign up" />
 
             </LinearLayout>
+
         </RelativeLayout>
 
         <ImageButton
@@ -120,13 +135,14 @@
         <ProgressBar
             android:layout_below="@id/user_profile_photo"
             android:visibility="invisible"
-            android:id="@+id/loginloadingProgressbar"
+            android:id="@+id/registrationloadingProgressbar"
             style="?android:attr/progressBarStyleLarge"
             android:layout_centerHorizontal="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             >
         </ProgressBar>
+
 
     </RelativeLayout>
 </ScrollView>

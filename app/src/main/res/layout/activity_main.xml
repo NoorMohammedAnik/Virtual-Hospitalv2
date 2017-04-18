@@ -1,117 +1,157 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="#8C1616"
+    android:background="@android:color/white"
     android:layout_height="match_parent"
     tools:context="com.example.rr.virtual_hospital.MainActivity"
     android:weightSum="1">
 
-    <TextView
-        android:id="@+id/Welcome"
-        android:layout_width="107dp"
-        android:layout_height="51dp"
-        android:gravity="center"
-        android:layout_marginTop="2dp"
-        android:layout_gravity="center"
-        android:text="Welcome!"
-        android:textColor="@android:color/white"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="139dp"
-        tools:layout_editor_absoluteY="16dp" />
-
-    <Button
-        android:layout_marginBottom="20dp"
-        android:id="@+id/VB"
-        android:layout_width="358dp"
-        android:layout_height="38dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="30dp"
-        android:paddingLeft="22dp"
-        android:text="Virtual Blood Bank"
-        android:drawableLeft="@drawable/blooddrop"
-        android:background="@drawable/button"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="80dp" />
-
-    <Button
-        android:layout_marginBottom="20dp"
-        android:layout_below="@id/VB"
-        android:id="@+id/Aid"
-        android:paddingLeft="22dp"
-        android:layout_width="352dp"
-        android:layout_marginTop="20dp"
-        android:layout_gravity="center"
-        android:layout_height="38dp"
-        android:text="First Aid"
-        android:drawableLeft="@drawable/syringe"
-        android:background="@drawable/button"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="150dp" />
-
-    <Button
-        android:layout_marginBottom="20dp"
-        android:layout_above="@id/Aid"
-        android:id="@+id/Hopitallist"
-        android:layout_width="224dp"
-        android:paddingLeft="22dp"
-        android:layout_marginTop="20dp"
-        android:layout_height="70dp"
-        android:padding="2dp"
-        android:text="Hospital List"
-        android:layout_gravity="center"
-        android:drawableTop="@drawable/hospital"
-        android:background="@drawable/button"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="220dp" />
-
-    <Button
-        android:id="@+id/Diagnistics"
-        android:layout_width="194dp"
-        android:layout_height="70dp"
-        android:layout_gravity="center"
-        android:layout_marginBottom="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_weight="0.06"
-        android:background="@drawable/button"
-        android:drawableTop="@drawable/medicalstethoscopevariant"
-        android:padding="2dp"
-
-        android:paddingLeft="18dp"
-        android:text="Diagnostic Center"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="293dp" />
-
-    <Button
-        android:layout_marginBottom="20dp"
-        android:id="@+id/Call"
-        android:paddingLeft="22dp"
-        android:layout_width="355dp"
-        android:layout_height="38dp"
-        android:layout_marginTop="20dp"
-        android:text="Call For Help"
-        android:layout_gravity="center"
-        android:drawableLeft="@drawable/auricularphonesymbol"
-        android:background="@drawable/button"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="361dp" />
-
-    <Button
-        android:layout_marginBottom="20dp"
-        android:id="@+id/Map"
-        android:layout_width="354dp"
-        android:layout_height="38dp"
-        android:paddingLeft="22dp"
-        android:layout_marginTop="15dp"
-        android:drawableLeft="@drawable/route"
-        android:text="Nearest Hospital"
-        android:layout_gravity="center"
-        android:background="@drawable/button"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="428dp" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
 
-</LinearLayout>
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome!!"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:layout_above="@+id/vb"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="36dp" />
+
+            <Button
+                android:id="@+id/hospital"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="321dp"
+                android:paddingTop="30dp"
+                android:text="Hospital List"
+                android:drawableTop="@drawable/hospital"
+                android:textAlignment="center"
+                android:padding="15dp"
+                android:textSize="15dp"
+                android:background="@drawable/buttonnew"
+                android:layout_alignParentTop="true"
+                android:layout_alignLeft="@+id/vb"
+                android:layout_alignStart="@+id/vb" />
+
+            <Button
+                android:id="@+id/Map"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="61dp"
+                android:text="Find Nearest Hospital"
+                android:padding="15dp"
+                android:textSize="15dp"
+                android:textAlignment="center"
+                android:drawableTop="@drawable/maps"
+                android:background="@drawable/buttonnew"
+                android:layout_below="@+id/hospital"
+                android:layout_alignLeft="@+id/hospital"
+                android:layout_alignStart="@+id/hospital" />
+
+            <Button
+                android:id="@+id/Doc"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:text="Doctors List"
+                android:background="@drawable/buttonnew"
+                android:padding="15dp"
+                android:textSize="15dp"
+                android:drawableTop="@drawable/doctors"
+                android:layout_marginTop="50dp"
+                android:layout_below="@+id/Map"
+                android:layout_alignLeft="@+id/Map"
+                android:layout_alignStart="@+id/Map" />
+
+            <Button
+                android:id="@+id/Call"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:text="Call For Help"
+                android:layout_marginRight="41dp"
+                android:padding="10dp"
+                android:background="@drawable/buttonnew"
+                android:layout_marginEnd="41dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <Button
+                android:id="@+id/Amb"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:text="Ambulance"
+                android:padding="15dp"
+                android:textSize="15dp"
+                android:drawableTop="@drawable/ambulance"
+                android:background="@drawable/buttonnew"
+                android:layout_alignTop="@+id/Map"
+                android:layout_alignLeft="@+id/Call"
+                android:layout_alignStart="@+id/Call" />
+
+            <Button
+                android:id="@+id/Aid"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:text="First Aid"
+                android:layout_marginBottom="69dp"
+                android:background="@drawable/buttonnew"
+                android:padding="15dp"
+                android:textSize="15dp"
+                android:drawableTop="@drawable/firstaidkit"
+                android:textAlignment="center"
+                android:layout_above="@+id/diagonostic"
+                android:layout_alignLeft="@+id/diagonostic"
+                android:layout_alignStart="@+id/diagonostic" />
+
+            <Button
+                android:id="@+id/vb"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:text="Virtual Blood Bank"
+                android:padding="10dp"
+                android:textSize="14dp"
+                android:drawableTop="@drawable/blooddrop"
+                android:textAlignment="center"
+                android:background="@drawable/buttonnew"
+                android:layout_marginLeft="28dp"
+                android:layout_marginStart="28dp"
+                android:layout_alignTop="@+id/Aid"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:id="@+id/diagonostic"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:text="Diagnostics List"
+                android:background="@drawable/buttonnew"
+                android:padding="15dp"
+                android:textSize="15dp"
+                android:textAlignment="center"
+                android:drawableTop="@drawable/cardiogram"
+                android:paddingTop="30dp"
+                android:layout_alignTop="@+id/hospital"
+                android:layout_alignLeft="@+id/Amb"
+                android:layout_alignStart="@+id/Amb" />
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>
