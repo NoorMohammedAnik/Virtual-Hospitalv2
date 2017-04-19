@@ -3,6 +3,7 @@ package com.example.rr.virtual_hospital;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -29,6 +30,10 @@ public class DocsActivity extends AppCompatActivity {
         listView=(ListView)findViewById(R.id.listDoc);
         CustomForDoc customForDoc= new CustomForDoc(getApplicationContext(),docs_Name,pic);
         listView.setAdapter(customForDoc);
+        getSupportActionBar().setHomeButtonEnabled(true); //for back button
+        getSupportActionBar().setHomeButtonEnabled(true); //for back button
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);//for back button
+        getSupportActionBar().setTitle("Doctor's List");
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
@@ -41,5 +46,17 @@ public class DocsActivity extends AppCompatActivity {
 
         });
 
+    }
+    //for back button
+    @Override
+    public boolean onOptionsItemSelected (MenuItem item){
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                // app icon in action bar clicked; goto parent activity.
+                this.finish();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 }
