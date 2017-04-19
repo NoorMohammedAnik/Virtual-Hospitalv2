@@ -47,7 +47,9 @@
         <activity android:name=".maps.bloodbank.ActivityDonorlist" />
         <activity android:name=".hospital.HospitalListActivity" />
         <activity android:name=".hospital.HospitalDetailsActivity" />
-        <activity android:name=".RegistrationActivity"></activity>
+        <activity android:name=".RegistrationActivity" />
+        <activity android:name=".DocsActivity" />
+        <activity android:name=".DocDetailsActivity"></activity>
     </application>
 
 </manifest>
