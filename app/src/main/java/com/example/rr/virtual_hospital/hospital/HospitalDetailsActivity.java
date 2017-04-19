@@ -105,19 +105,6 @@ public class HospitalDetailsActivity extends AppCompatActivity {
                     "Chittagong\n");
 
 
-        }if (getPlaceName.equals("BNSB"))
-        {
-
-            place_img.setImageResource(R.drawable.hospitalforlist);
-            place_name.setText(getPlaceName);
-            place_desc.setText("Ahsan Manjil was the official residential palace and seat of the Dhaka Nawab Family." +
-                    " This magnificent building is situated at Kumartoli along the banks of the Buriganga River in Dhaka," +
-                    " Bangladesh. The construction of this palace was started in 1859 and was completed in 1872." +
-                    " It was constructed in the Indo-Saracenic Revival architecture." +
-                    " It has been designated as a national museum.");
-            place_location.setText("Ahsan Manjil, Dhaka.");
-
-
         }if (getPlaceName.equals("Ekhushe Hospital"))
         {
 
