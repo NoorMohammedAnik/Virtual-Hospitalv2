@@ -11,7 +11,7 @@ import com.example.rr.virtual_hospital.hospital.HospitalListActivity;
 import com.example.rr.virtual_hospital.maps.MapsActivity;
 
 public class MainActivity extends AppCompatActivity {
-    Button bloodBank,callForHelp,firstAid,hospital,map,diago,doc;
+    Button bloodBank,callForHelp,firstAid,hospital,map,diago,doc,ambu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         diago=(Button)findViewById(R.id.diagonostic);
         map=(Button)findViewById(R.id.Map);
         doc=(Button)findViewById(R.id.Doc);
+        ambu=(Button)findViewById(R.id.Amb);
 
         bloodBank.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -81,7 +82,14 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, "Doctors List", Toast.LENGTH_SHORT).show();
             }
         });
-
+        ambu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent in = new Intent(MainActivity.this,AmbulanceActivity.class);
+                startActivity(in);
+                Toast.makeText(MainActivity.this, "Ambulance List", Toast.LENGTH_SHORT).show();
+            }
+        });
 
     }
 }

@@ -33,7 +33,7 @@ public class HospitalListActivity extends AppCompatActivity {
 
 
 
-       final String hospitalList[]={"C.S.C.R","Chattagram Maa-Shishu General Hospital","CHEVRON","Chittagong Health Care Hospital Pvt. Ltd.","Chittagong Metropolitan Hospital Pvt. Ltd.","Chittagong Poly Clinic Pvt. Ltd."," Ekhushe Hospital","General Hospital","Holy Crescent Hospital (Pvt.) Ltd"," Ibrahim Iqbal Memorial Hospital Limited","Memon City Corporation","Medical Centre (Pvt) Clinic","Mahanagar Clinic","Labaid Specialized Hospital - Chittagong","Royal Hospital"};
+       final String hospitalList[]={"C.S.C.R","Chattagram Maa-Shishu General Hospital","CHEVRON","Chittagong Health Care Hospital Pvt. Ltd.","Chittagong Metropolitan Hospital Pvt. Ltd.","Chittagong Poly Clinic Pvt. Ltd."," Ekhushe Hospital","General Hospital","Holy Crescent Hospital (Pvt.) Ltd","Memon City Corporation","Medical Centre (Pvt) Clinic","Mahanagar Clinic","Labaid Specialized Hospital - Chittagong","Royal Hospital"};
         CustomListAdapter customAdapter=new CustomListAdapter(getApplicationContext(),hospitalList,flags);
         CustomList.setAdapter(customAdapter);
 

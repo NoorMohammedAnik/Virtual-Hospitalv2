@@ -49,7 +49,9 @@
         <activity android:name=".hospital.HospitalDetailsActivity" />
         <activity android:name=".RegistrationActivity" />
         <activity android:name=".DocsActivity" />
-        <activity android:name=".DocDetailsActivity"></activity>
+        <activity android:name=".DocDetailsActivity" />
+        <activity android:name=".AmbulanceActivity" />
+        <activity android:name=".AmbulanceDetActivity"></activity>
     </application>
 
 </manifest>

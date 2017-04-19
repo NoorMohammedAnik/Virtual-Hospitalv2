@@ -27,12 +27,12 @@
 
 
             <customfonts.MyTextView
-                android:id="@+id/txt_place_name"
+                android:id="@+id/ambulnName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="20dp"
-                android:text="Place Name"
+                android:text="Ambulance Provider Name"
                 android:textColor="#fff"
                 android:textSize="24sp"
                 android:textStyle="bold" />
@@ -51,63 +51,34 @@
 
 
             <customfonts.MyTextView
-                android:id="@+id/textView2"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="1dp"
-                android:gravity="center"
-
-                android:textSize="20sp"
-                android:background="#fff"
-                android:elevation="4dp"
-                android:padding="10dp"
-
-                android:text="Hospital Description"
-                android:textColor="@color/colorPrimary" />
-
-            <customfonts.MyTextView
-                android:id="@+id/txt_place_description"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="5dp"
-                android:layout_marginRight="10dp"
-                android:background="#fff"
-                android:clickable="true"
-                android:elevation="10dp"
-                android:padding="10dp"
-                android:textSize="20sp"
-                android:text="Description" />
-
-
-            <customfonts.MyTextView
+                android:id="@+id/contactNumber"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:background="#fff"
-
-                android:textSize="20sp"
-                android:gravity="center"
                 android:elevation="4dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Contact Number :"
                 android:textColor="@color/colorPrimary"
-                android:padding="10dp"
-                android:text="Location" />
+                android:textSize="20sp" />
 
             <customfonts.MyTextView
+                android:id="@+id/ambulanceContact"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:layout_marginBottom="3dp"
                 android:layout_marginTop="3dp"
                 android:background="#fff"
-                android:textSize="20sp"
                 android:clickable="true"
                 android:elevation="10dp"
                 android:padding="10dp"
-                android:text="Location"
-                android:id="@+id/txt_place_location" />
+                android:text="Number"
+                android:textAlignment="center"
+                android:textSize="20sp" />
 
-
-
+            />
 
 
 

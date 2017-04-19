@@ -75,6 +75,7 @@
                 android:clickable="true"
                 android:elevation="10dp"
                 android:padding="10dp"
+                android:textAlignment="center"
                 android:text="Description"
                 android:textSize="20sp" />
 
@@ -89,7 +90,7 @@
                 android:elevation="4dp"
                 android:gravity="center"
                 android:padding="10dp"
-                android:text="Chember"
+                android:text="Chamber"
                 android:textColor="@color/colorPrimary"
                 android:textSize="20sp" />
 
@@ -98,6 +99,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
+                android:textAlignment="center"
                 android:layout_marginBottom="3dp"
                 android:layout_marginTop="3dp"
                 android:background="#fff"
@@ -125,6 +127,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
+                android:textAlignment="center"
                 android:layout_marginBottom="3dp"
                 android:layout_marginTop="3dp"
                 android:background="#fff"
@@ -153,6 +156,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:layout_marginBottom="3dp"
+                android:textAlignment="center"
                 android:layout_marginTop="3dp"
                 android:background="#fff"
                 android:clickable="true"

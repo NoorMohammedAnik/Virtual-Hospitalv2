@@ -49,7 +49,6 @@ public class DocDetailsActivity extends AppCompatActivity {
             place_location.setText("C.S.C.R. Probotok Moor , Chittagong.");
             place_contactNumbertext.setText("01744589950");
             place_vistingtext.setText(" 5:00PM-11:00PM");
-            place_desc.setTextColor(Color.BLACK);
 
 
         }
@@ -117,7 +116,7 @@ public class DocDetailsActivity extends AppCompatActivity {
             place_location.setText("C.S.C.R. Probotok Moor , Chittagong.");
             place_contactNumbertext.setText("01744589950");
             place_vistingtext.setText("7:00PM-11:00PM");
-
+        }
 
             if (getDocName.equals("Dr. Md. Abdul Quader")) {
 
@@ -131,7 +130,7 @@ public class DocDetailsActivity extends AppCompatActivity {
 
             }
 
-            if (getDocName.equals("Prof. (Dr.) Md. Ridwanur Rahman")) {
+            if (getDocName.equals(" Prof.(Dr.) Md. Ridwanur Rahman")) {
 
                 place_img.setImageResource(R.drawable.doctorsforlist);
                 place_name.setText(getDocName);
@@ -317,7 +316,7 @@ public class DocDetailsActivity extends AppCompatActivity {
             }
             if (getDocName.equals("Prof. (Dr.) Md Zillur Rahman")) {
 
-                place_img.setImageResource(R.drawable.hospitalforlist);
+                place_img.setImageResource(R.drawable.doctorsforlist);
                 place_name.setText(getDocName);
                 place_desc.setText("Neurosurgery Specialist");
                 place_location.setText("C.S.C.R. Probotok Moor , Chittagong.");
@@ -328,7 +327,7 @@ public class DocDetailsActivity extends AppCompatActivity {
             }
             if (getDocName.equals("Dr. Zeenat Meraj Chowdhury")) {
 
-                place_img.setImageResource(R.drawable.hospitalforlist);
+                place_img.setImageResource(R.drawable.doctorsforlist);
                 place_name.setText(getDocName);
                 place_desc.setText("Dermatology Specialist");
                 place_location.setText("C.S.C.R. Probotok Moor , Chittagong.");
@@ -339,7 +338,7 @@ public class DocDetailsActivity extends AppCompatActivity {
             }
             if (getDocName.equals("Prof. (Dr.) Wazir Ahmed")) {
 
-                place_img.setImageResource(R.drawable.hospitalforlist);
+                place_img.setImageResource(R.drawable.doctorsforlist);
                 place_name.setText(getDocName);
                 place_desc.setText("Child Specialist");
                 place_location.setText("C.S.C.R. Probotok Moor , Chittagong.");
@@ -349,7 +348,7 @@ public class DocDetailsActivity extends AppCompatActivity {
             }
             if (getDocName.equals("Dr. Ekramul Hoque")) {
 
-                place_img.setImageResource(R.drawable.hospitalforlist);
+                place_img.setImageResource(R.drawable.doctorsforlist);
                 place_name.setText(getDocName);
                 place_desc.setText("Child Specialist");
                 place_location.setText("C.S.C.R. Probotok Moor , Chittagong.");
@@ -360,7 +359,7 @@ public class DocDetailsActivity extends AppCompatActivity {
             }
             if (getDocName.equals("Dr. Rasheda Samad")) {
 
-                place_img.setImageResource(R.drawable.hospitalforlist);
+                place_img.setImageResource(R.drawable.doctorsforlist);
                 place_name.setText(getDocName);
                 place_desc.setText("Child Specialist");
                 place_location.setText("C.S.C.R. Probotok Moor , Chittagong.");
@@ -371,7 +370,7 @@ public class DocDetailsActivity extends AppCompatActivity {
             }
             if (getDocName.equals("Prof. (Dr.) Shamsunnahar")) {
 
-                place_img.setImageResource(R.drawable.hospitalforlist);
+                place_img.setImageResource(R.drawable.doctorsforlist);
                 place_name.setText(getDocName);
                 place_desc.setText("Gynae & Obs. Specialist");
                 place_location.setText("C.S.C.R. Probotok Moor , Chittagong.");
@@ -381,7 +380,7 @@ public class DocDetailsActivity extends AppCompatActivity {
             }
             if (getDocName.equals("Dr. Rowshan Morshed")) {
 
-                place_img.setImageResource(R.drawable.hospitalforlist);
+                place_img.setImageResource(R.drawable.doctorsforlist);
                 place_name.setText(getDocName);
                 place_desc.setText("Gynae & Obs. Specialist");
                 place_location.setText("C.S.C.R. Probotok Moor , Chittagong.");
@@ -392,7 +391,7 @@ public class DocDetailsActivity extends AppCompatActivity {
             }
             if (getDocName.equals("Dr. Shahena Akter")) {
 
-                place_img.setImageResource(R.drawable.hospitalforlist);
+                place_img.setImageResource(R.drawable.doctorsforlist);
                 place_name.setText(getDocName);
                 place_desc.setText("Gynae & Obs. Specialist");
                 place_location.setText("C.S.C.R. Probotok Moor , Chittagong.");
@@ -403,7 +402,7 @@ public class DocDetailsActivity extends AppCompatActivity {
             }
             if (getDocName.equals("Dr. Shoyela Shahnaz")) {
 
-                place_img.setImageResource(R.drawable.hospitalforlist);
+                place_img.setImageResource(R.drawable.doctorsforlist);
                 place_name.setText(getDocName);
                 place_desc.setText("Gynae & Obs. Specialist");
                 place_location.setText("C.S.C.R. Probotok Moor , Chittagong.");
@@ -414,7 +413,7 @@ public class DocDetailsActivity extends AppCompatActivity {
             }
             if (getDocName.equals("Dr. Shamima Anwar")) {
 
-                place_img.setImageResource(R.drawable.hospitalforlist);
+                place_img.setImageResource(R.drawable.doctorsforlist);
                 place_name.setText(getDocName);
                 place_desc.setText("Cancer Specialist");
                 place_location.setText("C.S.C.R. Probotok Moor , Chittagong.");
@@ -424,7 +423,7 @@ public class DocDetailsActivity extends AppCompatActivity {
             }
             if (getDocName.equals("Dr. Sajjad Mohammed Yusuff")) {
 
-                place_img.setImageResource(R.drawable.hospitalforlist);
+                place_img.setImageResource(R.drawable.doctorsforlist);
                 place_name.setText(getDocName);
                 place_desc.setText("Cancer Specialist");
                 place_location.setText("C.S.C.R. Probotok Moor , Chittagong.");
@@ -435,7 +434,7 @@ public class DocDetailsActivity extends AppCompatActivity {
             }
             if (getDocName.equals("Prof. Aminuddin A Khan")) {
 
-                place_img.setImageResource(R.drawable.hospitalforlist);
+                place_img.setImageResource(R.drawable.doctorsforlist);
                 place_name.setText(getDocName);
                 place_desc.setText("Physical Medicine Specialist");
                 place_location.setText("C.S.C.R. Probotok Moor , Chittagong.");
@@ -446,7 +445,7 @@ public class DocDetailsActivity extends AppCompatActivity {
             }
             if (getDocName.equals("Dr. Shaik Ahmed")) {
 
-                place_img.setImageResource(R.drawable.hospitalforlist);
+                place_img.setImageResource(R.drawable.doctorsforlist);
                 place_name.setText(getDocName);
                 place_desc.setText("Physical Medicine Specialist");
                 place_location.setText("C.S.C.R. Probotok Moor , Chittagong.");
@@ -457,7 +456,7 @@ public class DocDetailsActivity extends AppCompatActivity {
             }
             if (getDocName.equals("Dr. Md. Qumrul Ahsan")) {
 
-                place_img.setImageResource(R.drawable.hospitalforlist);
+                place_img.setImageResource(R.drawable.doctorsforlist);
                 place_name.setText(getDocName);
                 place_desc.setText("Radiology Specialist");
                 place_location.setText("C.S.C.R. Probotok Moor , Chittagong.");
@@ -468,7 +467,7 @@ public class DocDetailsActivity extends AppCompatActivity {
             }
             if (getDocName.equals("Dr. Anisul Moula")) {
 
-                place_img.setImageResource(R.drawable.hospitalforlist);
+                place_img.setImageResource(R.drawable.doctorsforlist);
                 place_name.setText(getDocName);
                 place_desc.setText("Radiology Specialist");
                 place_location.setText("C.S.C.R. Probotok Moor , Chittagong.");
@@ -479,7 +478,7 @@ public class DocDetailsActivity extends AppCompatActivity {
             }
             if (getDocName.equals("Dr. Rehnuma Rashid")) {
 
-                place_img.setImageResource(R.drawable.hospitalforlist);
+                place_img.setImageResource(R.drawable.doctorsforlist);
                 place_name.setText(getDocName);
                 place_desc.setText("Radiology Specialist");
                 place_location.setText("C.S.C.R. Probotok Moor , Chittagong.");
@@ -490,7 +489,7 @@ public class DocDetailsActivity extends AppCompatActivity {
             }
             if (getDocName.equals("Dr. Syed Ahmed")) {
 
-                place_img.setImageResource(R.drawable.hospitalforlist);
+                place_img.setImageResource(R.drawable.doctorsforlist);
                 place_name.setText(getDocName);
                 place_desc.setText("Pathology Specialist");
                 place_location.setText("C.S.C.R. Probotok Moor , Chittagong.");
@@ -512,7 +511,7 @@ public class DocDetailsActivity extends AppCompatActivity {
 
             }
         }
-    }
+
         //for back button
         @Override
         public boolean onOptionsItemSelected (MenuItem item){
