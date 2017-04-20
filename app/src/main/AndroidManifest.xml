@@ -48,7 +48,8 @@
             android:label="@string/title_activity_maps" />
         <activity android:name=".profile.SignUp" />
         <activity android:name=".profile.Profile" />
-        <activity android:name=".prescription.UploadPrescription"></activity>
+        <activity android:name=".prescription.UploadPrescription" />
+        <activity android:name=".profile.BloodBank"></activity>
     </application>
 
 </manifest>

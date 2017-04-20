@@ -1,0 +1,56 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.rr.virtual_hospital.profile.BloodBank">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:fitsSystemWindows="true"
+        android:id="@+id/filter_anchor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        >
+
+        <!--<android.support.v7.widget.SearchView-->
+        <!--android:id="@+id/bar_search"-->
+        <!--android:queryHint="Search donor here"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"></android.support.v7.widget.SearchView>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_scrollFlags="enterAlways|scroll"
+            >
+            <Spinner
+                android:id="@+id/spn_filter_blood_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></Spinner>
+
+            <Spinner
+                android:id="@+id/spn_filter_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></Spinner>
+        </LinearLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.RecyclerView
+        app:layout_scrollFlags="scroll"
+        android:id="@+id/recycler_directory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+    </android.support.v7.widget.RecyclerView>
+
+
+</android.support.design.widget.CoordinatorLayout>
+
+
+
+
+

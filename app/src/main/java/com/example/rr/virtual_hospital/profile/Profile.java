@@ -23,6 +23,7 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.example.rr.virtual_hospital.MainActivity;
 import com.example.rr.virtual_hospital.R;
 import com.example.rr.virtual_hospital.prescription.UploadPrescription;
 import com.example.rr.virtual_hospital.prescription.model.Prescriptions;
@@ -49,7 +50,7 @@ public class Profile extends AppCompatActivity implements View.OnClickListener {
     private ProgressDialog loading;
     private SharedPreferences sp;
     private RequestQueue rq;
-    private Button btnUploadActivity;
+    private Button btnUploadActivity,btnDirectory,btnLogout;
     //temps
     private ArrayList<Prescriptions> prescs;
     private Map<String, String> updateData;
@@ -66,15 +67,15 @@ public class Profile extends AppCompatActivity implements View.OnClickListener {
         division = (MyTextView) findViewById(R.id.txt_profile_division);
         mobile = (MyTextView) findViewById(R.id.txt_profile_mobile);
         btnUploadActivity= (Button) findViewById(R.id.btn_upload_prescs);
+        btnDirectory=(Button) findViewById(R.id.btn_visit_blood_bank);
+        btnLogout=(Button) findViewById(R.id.btn_logout);
+
         prescriptionTasksURL=getString(R.string.serverIp)+"prescription.php";
         updateData=new HashMap<>();
         sp=getSharedPreferences("vHospUserData",MODE_PRIVATE);
-
-
         loading = new ProgressDialog(this);
         loading.setTitle("Loading...");
         loading.setMessage("Loading profile information");
-
 
         llname = (LinearLayout) findViewById(R.id.profile_llname);
         llcell = (LinearLayout) findViewById(R.id.profile_llcell);
@@ -99,7 +100,22 @@ public class Profile extends AppCompatActivity implements View.OnClickListener {
                 startActivity(new Intent(Profile.this, UploadPrescription.class));
             }
         });
+        btnDirectory.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Profile.this,BloodBank.class));
+            }
+        });
 
+        btnLogout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                SharedPreferences.Editor editor=sp.edit();
+                editor.clear().apply();
+                Profile.this.finish();
+                startActivity(new Intent(Profile.this, MainActivity.class));
+            }
+        });
     }
 
     private void fetchUserProfileFromServer() {
