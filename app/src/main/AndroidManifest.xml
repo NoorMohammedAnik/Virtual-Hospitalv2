@@ -18,19 +18,27 @@
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity" />
         <activity android:name=".profile.VbActivity" />
-        <activity android:name=".FirstAidActivity" />
+        <activity android:name=".FirstAiActivity" />
+        <activity android:name=".FirstAiDetActivity"/>
         <activity android:name=".CallActivity" />
-        <activity android:name=".HospitalActivity" />
         <activity android:name=".DiaActivity" />
-        <activity android:name=".NearestActivity" />
-        <activity android:name=".SplashActivity">
+        <activity android:name=".DiaDetailsActivity"/>
+        <activity android:name=".DocDetailsActivity"/>
+        <activity android:name=".hospital.HospitalListActivity"/>
+        <activity android:name=".profile.SignUp"/>
+        <activity android:name=".DocsActivity"/>
+        <activity android:name=".AmbulanceActivity"/>
+        <activity android:name=".AmbulanceDetActivity"/>
+        <activity android:name=".SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".HospGoActivity" />
+
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -49,7 +57,7 @@
         <activity android:name=".profile.SignUp" />
         <activity android:name=".profile.Profile" />
         <activity android:name=".prescription.UploadPrescription" />
-        <activity android:name=".profile.BloodBank"></activity>
+        <activity android:name=".profile.BloodBank" />
     </application>
 
 </manifest>

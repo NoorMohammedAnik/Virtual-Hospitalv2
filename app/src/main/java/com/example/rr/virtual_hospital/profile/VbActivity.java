@@ -33,7 +33,7 @@ import java.util.Map;
 
 public class VbActivity extends AppCompatActivity {
 
-    private EditText userMobile,passWord;
+    private EditText userMobile,password;
     private Button submit,signUp;
     private ProgressDialog loading;
     private RequestQueue logReq;
@@ -47,10 +47,10 @@ public class VbActivity extends AppCompatActivity {
         setContentView(R.layout.activity_vb);
 
         URL=getString(R.string.serverIp)+"login.php";
-        userMobile =(EditText)findViewById(R.id.Usermobile);
-        passWord=(EditText)findViewById(R.id.Pass);
-        submit=(Button)findViewById(R.id.Submit);
-        signUp=(Button)findViewById(R.id.Sign);
+        userMobile =(EditText)findViewById(R.id.txt_cell);
+        password =(EditText)findViewById(R.id.txtPass);
+        submit=(Button)findViewById(R.id.btn_login);
+        signUp=(Button)findViewById(R.id.btn_register);
 
         sp=getSharedPreferences("vHospUserData",MODE_PRIVATE);
 
@@ -81,7 +81,7 @@ public class VbActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String strUsername,strPassword;
                 strUsername= userMobile.getText().toString().trim();
-                strPassword= passWord.getText().toString().trim();
+                strPassword= password.getText().toString().trim();
 
                 if(TextUtils.isEmpty(strUsername)&&TextUtils.isEmpty(strPassword)){
                     Toast.makeText(VbActivity.this, "Fill all the details", Toast.LENGTH_SHORT).show();

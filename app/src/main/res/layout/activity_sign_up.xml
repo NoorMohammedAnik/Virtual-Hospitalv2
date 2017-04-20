@@ -1,91 +1,203 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorPrimary"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="16dp"
-    android:background="@drawable/background"
-    tools:context="com.example.rr.virtual_hospital.profile.SignUp">
-    <TextView
-        android:textAlignment="center"
-        android:textColor="#000"
-        android:textSize="40dp"
-        android:layout_centerHorizontal="true"
-        android:text="Registration"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView2" />
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        android:scrollbarAlwaysDrawVerticalTrack="true">
 
-    <EditText
-        android:textColorHint="@android:color/black"
-        android:textColorHighlight="@android:color/black"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:ems="10"
-        android:layout_marginTop="43dp"
-        android:id="@+id/edt_reg_mobile"
-        android:hint="Enter your mobile number"
-        android:layout_below="@+id/textView2"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        <TextView
+            android:id="@+id/login_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="22dp"
+            android:gravity="center_horizontal"
+            android:text="Account Registration"
+            android:textColor="#fff"
+            android:textSize="26sp"
+            android:textStyle="bold" />
 
-    <EditText
-        android:textColorHint="@android:color/black"
-        android:textColorHighlight="@android:color/black"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:ems="10"
-        android:id="@+id/edt_reg_password"
-        android:hint="Enter new password"
-        android:layout_below="@+id/edt_reg_mobile"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_title"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="70dp"
+            android:background="#fff"
+            android:elevation="4dp"
+            android:orientation="vertical"
+            android:padding="20dp">
 
-    <EditText
-        android:textColorHint="@android:color/black"
-        android:textColorHighlight="@android:color/black"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:ems="10"
-        android:id="@+id/edt_reg_name"
-        android:hint="Enter your name"
-        android:layout_below="@id/edt_reg_password"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"/>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="30dp">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/account"
+                        android:singleLine="true"
+                        android:hint=" Name"
+                        android:inputType="textEmailAddress"
+                        android:id="@+id/txt_name" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/cell"
+                        android:singleLine="true"
+                        android:hint=" Cell"
+                        android:inputType="textEmailAddress"
+                        android:id="@+id/txt_cell" />
+                </android.support.design.widget.TextInputLayout>
 
 
-    <Spinner
-        android:textColorHint="@android:color/black"
-        android:textColorHighlight="@android:color/black"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/edt_reg_name"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:id="@+id/spn_reg_blood_group" />
+                <android.support.design.widget.TextInputLayout
 
-    <Spinner
-        android:textColorHint="@android:color/black"
-        android:textColorHighlight="@android:color/black"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/spn_reg_blood_group"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:id="@+id/spn_reg_division" />
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
-    <Button
-        android:textColor="@android:color/holo_red_dark"
-        android:background="@drawable/buuton2"
-        android:text="Sign Up"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/btn_register"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentBottom="true" />
+                    <EditText
+                        android:id="@+id/txt_password"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/lock"
+                        android:hint=" Password"
+                        android:inputType="textPassword"
+                        android:singleLine="true" />
+                </android.support.design.widget.TextInputLayout>
 
-</RelativeLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </android.support.design.widget.TextInputLayout>
+
+
+              <LinearLayout
+                  android:id="@+id/layoutBlood"
+                  android:weightSum="4"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+
+
+                  <TextView
+                      android:padding="4dp"
+                      android:layout_weight="2"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Select Blood Group:"/>
+
+
+                  <Spinner
+                      android:layout_weight="2"
+                      android:paddingLeft="30dp"
+                      android:textColorHint="@android:color/black"
+                      android:textColorHighlight="@android:color/black"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_below="@+id/spn_reg_blood_group"
+                      android:layout_alignParentStart="true"
+                      android:layout_alignParentLeft="true"
+                      android:id="@+id/spn_reg_blood_group" />
+
+
+
+
+
+              </LinearLayout>
+
+
+                <LinearLayout
+                    android:weightSum="4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:padding="5dp"
+                        android:layout_weight="2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Select Your Division:"/>
+
+                    <Spinner
+                        android:layout_weight="2"
+                        android:paddingLeft="30dp"
+                        android:textColorHint="@android:color/black"
+                        android:textColorHighlight="@android:color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spn_reg_division" />
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <com.github.rubensousa.raiflatbutton.RaiflatButton
+                    android:id="@+id/btnSignup"
+                    style="@style/Base.Widget.AppCompat.Button.Colored"
+                    android:layout_width="152dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Sign up" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/user_profile_photo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/login_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/user_profile_image_background"
+            android:elevation="4dp"
+            android:src="@drawable/user"
+            android:scaleType="centerCrop" />
+
+
+
+
+
+
+    </RelativeLayout>
+</ScrollView>
+

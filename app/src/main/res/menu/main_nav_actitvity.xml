@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/account"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_my_prescription"
+            android:icon="@drawable/prescription"
+            android:title="My Prescription" />
+        <item
+            android:id="@+id/nav_find_blood"
+            android:icon="@drawable/doctor"
+            android:title="Find Blood" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="Logout" />
+    </group>
+
+
+
+</menu>

@@ -45,15 +45,15 @@ public class SignUp extends AppCompatActivity {
         signQueue= Volley.newRequestQueue(this);
         userRegURL=getString(R.string.serverIp)+"registration.php";
 
-        edtName=(EditText) findViewById(R.id.edt_reg_name);
-        edtPassword=(EditText) findViewById(R.id.edt_reg_password);
-        edtMobile=(EditText) findViewById(R.id.edt_reg_mobile);
+        edtName=(EditText) findViewById(R.id.txt_name);
+        edtPassword=(EditText) findViewById(R.id.txt_password);
+        edtMobile=(EditText) findViewById(R.id.txt_cell);
 
 
         spnBloodGroup= (Spinner) findViewById(R.id.spn_reg_blood_group);
 
         spnDivisions= (Spinner) findViewById(R.id.spn_reg_division);
-        register= (Button) findViewById(R.id.btn_register);
+       register=(Button)findViewById(R.id.btnSignup);
 
         ArrayAdapter<String> bloodGroupAdapter=new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item,BloodGroups);
         bloodGroupAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);

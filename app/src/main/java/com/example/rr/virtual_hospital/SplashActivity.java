@@ -1,9 +1,8 @@
 package com.example.rr.virtual_hospital;
 
 import android.content.Intent;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;
 
 
@@ -11,7 +10,7 @@ import android.widget.Toast;
 // Done By Rafid
 
 public class SplashActivity extends AppCompatActivity {
-    ActionBar getActionBar;
+   // ActionBar getActionBar;
     public static int SplashTime=4000;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
