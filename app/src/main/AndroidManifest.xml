@@ -20,7 +20,6 @@
         <activity android:name=".FirstAidActivity" />
         <activity android:name=".CallActivity" />
         <activity android:name=".DiaActivity" />
-        <activity android:name=".NearestActivity" />
         <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,7 +27,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".HospGoActivity" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -47,11 +45,11 @@
         <activity android:name=".maps.bloodbank.ActivityDonorlist" />
         <activity android:name=".hospital.HospitalListActivity" />
         <activity android:name=".hospital.HospitalDetailsActivity" />
-        <activity android:name=".RegistrationActivity" />
         <activity android:name=".DocsActivity" />
         <activity android:name=".DocDetailsActivity" />
         <activity android:name=".AmbulanceActivity" />
-        <activity android:name=".AmbulanceDetActivity"></activity>
+        <activity android:name=".AmbulanceDetActivity" />
+        <activity android:name=".DiaDetailsActivity"></activity>
     </application>
 
 </manifest>
