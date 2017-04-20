@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/background"
+    tools:context="com.example.rr.virtual_hospital.profile.SignUp">
+    <TextView
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="40dp"
+        android:layout_centerHorizontal="true"
+        android:text="Registration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2" />
+
+    <EditText
+        android:textColorHint="@android:color/black"
+        android:textColorHighlight="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginTop="43dp"
+        android:id="@+id/edt_reg_mobile"
+        android:hint="Enter your mobile number"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:textColorHint="@android:color/black"
+        android:textColorHighlight="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/edt_reg_password"
+        android:hint="Enter new password"
+        android:layout_below="@+id/edt_reg_mobile"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:textColorHint="@android:color/black"
+        android:textColorHighlight="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/edt_reg_name"
+        android:hint="Enter your name"
+        android:layout_below="@id/edt_reg_password"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"/>
+
+
+    <Spinner
+        android:textColorHint="@android:color/black"
+        android:textColorHighlight="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_reg_name"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/spn_reg_blood_group" />
+
+    <Spinner
+        android:textColorHint="@android:color/black"
+        android:textColorHighlight="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spn_reg_blood_group"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/spn_reg_division" />
+
+    <Button
+        android:textColor="@android:color/holo_red_dark"
+        android:background="@drawable/buuton2"
+        android:text="Sign Up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_register"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

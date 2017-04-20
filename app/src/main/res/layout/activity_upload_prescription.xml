@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:padding="16dp"
+    android:layout_height="match_parent"
+    tools:context="com.example.rr.virtual_hospital.prescription.UploadPrescription">
+    <ImageView
+        android:src="@drawable/presc_placeholder"
+        android:id="@+id/prescription_selected_image_placeholder"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:scaleType="fitXY"/>
+
+    <EditText
+        android:layout_below="@id/prescription_selected_image_placeholder"
+        android:id="@+id/input_prescription_name"
+        android:hint="name your prescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_below="@id/input_prescription_name"
+        android:id="@+id/button_prescription_select"
+        android:text="Select Image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_below="@id/button_prescription_select"
+        android:id="@+id/button_prescription_upload"
+        android:text="Upload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+</ScrollView>

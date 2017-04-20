@@ -6,5 +6,10 @@
 
     <color name="map_button_normal">#ffffff</color>
     <color name="map_button_pressed">#D80F0F</color>
-    <color name="save_button_pressed">#D3D3D3</color>
+
+    <color name="timecolor">#000</color>
+    <color name="schedulecolor">#000</color>
+    <color name="statementcolor">#778AA6</color>
+    <color name="weekcolor">#fff</color>
+    <color name="agendacolor">#8E9097</color>
 </resources>

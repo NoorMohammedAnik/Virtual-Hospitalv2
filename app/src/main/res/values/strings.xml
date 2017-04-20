@@ -1,5 +1,35 @@
 <resources>
     <string name="app_name">Virtual-Hospital</string>
     <string name="title_activity_maps">Map</string>
-    <string name="action_bar_text">Blood Donate</string>
+
+    <!--
+        <string name="serverIp">https://ideabinbd.com/src/v_hosp/</string>
+ <string name="serverIp">http://10.0.3.2/virtual_hospital/</string>
+    -->
+
+    <string name="serverIp">https://ideabinbd.com/src/v_hosp/</string>
+
+    <string-array name="cities">
+        <item>All Cities</item>
+        <item>Dhaka</item>
+        <item>Chittagong</item>
+        <item>Rajshahi</item>
+        <item>Khulna</item>
+        <item>Barishal</item>
+        <item>Rangpur</item>
+        <item>Sylhet</item>
+    </string-array>
+
+    <string-array name="blood_groups">
+        <item>All Blood Groups</item>
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>O+</item>
+        <item>O-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+    </string-array>
+
 </resources>

@@ -9,6 +9,7 @@ import android.widget.Toast;
 
 import com.example.rr.virtual_hospital.hospital.HospitalListActivity;
 import com.example.rr.virtual_hospital.maps.MapsActivity;
+import com.example.rr.virtual_hospital.profile.VbActivity;
 
 public class MainActivity extends AppCompatActivity {
     Button bloodBank,callForHelp,firstAid,hospital,map,diago,doc,ambu;

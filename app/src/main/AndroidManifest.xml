@@ -8,6 +8,7 @@
          location permissions for the 'MyLocation' functionality. 
     -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -16,9 +17,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity" />
-        <activity android:name=".VbActivity" />
+        <activity android:name=".profile.VbActivity" />
+        <activity android:name=".FirstAidActivity" />
         <activity android:name=".CallActivity" />
+        <activity android:name=".HospitalActivity" />
         <activity android:name=".DiaActivity" />
+        <activity android:name=".NearestActivity" />
         <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,6 +30,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".HospGoActivity" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -41,16 +46,10 @@
         <activity
             android:name=".maps.MapsActivity"
             android:label="@string/title_activity_maps" />
-        <activity android:name=".maps.bloodbank.ActivityDonorlist" />
-        <activity android:name=".hospital.HospitalListActivity" />
-        <activity android:name=".hospital.HospitalDetailsActivity" />
-        <activity android:name=".DocsActivity" />
-        <activity android:name=".DocDetailsActivity" />
-        <activity android:name=".AmbulanceActivity" />
-        <activity android:name=".AmbulanceDetActivity" />
-        <activity android:name=".DiaDetailsActivity" />
-        <activity android:name=".FirstAiActivity" />
-        <activity android:name=".FirstAiDetActivity"></activity>
+        <activity android:name=".profile.SignUp" />
+        <activity android:name=".profile.Profile" />
+        <activity android:name=".prescription.UploadPrescription" />
+        <activity android:name=".profile.BloodBank"></activity>
     </application>
 
 </manifest>
