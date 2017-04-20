@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         firstAid.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent in = new Intent(MainActivity.this,FirstAidActivity.class);
+                Intent in = new Intent(MainActivity.this,FirstAiActivity.class);
                 startActivity(in);
                 Toast.makeText(MainActivity.this, "First Aid", Toast.LENGTH_SHORT).show();
             }

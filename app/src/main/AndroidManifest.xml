@@ -17,7 +17,6 @@
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity" />
         <activity android:name=".VbActivity" />
-        <activity android:name=".FirstAidActivity" />
         <activity android:name=".CallActivity" />
         <activity android:name=".DiaActivity" />
         <activity android:name=".SplashActivity">
@@ -49,7 +48,9 @@
         <activity android:name=".DocDetailsActivity" />
         <activity android:name=".AmbulanceActivity" />
         <activity android:name=".AmbulanceDetActivity" />
-        <activity android:name=".DiaDetailsActivity"></activity>
+        <activity android:name=".DiaDetailsActivity" />
+        <activity android:name=".FirstAiActivity" />
+        <activity android:name=".FirstAiDetActivity"></activity>
     </application>
 
 </manifest>

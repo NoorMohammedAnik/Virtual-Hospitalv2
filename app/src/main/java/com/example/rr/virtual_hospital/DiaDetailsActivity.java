@@ -27,7 +27,7 @@ public class DiaDetailsActivity extends AppCompatActivity {
         place_contactNumbertext = (TextView) findViewById(R.id.diaNumber);
         String getDocName = getIntent().getExtras().getString("docName");
 
-        if (getDocName.equals(" APEX DIAGNOSTIC SERVICES (PVT.) LTD.")) {
+        if (getDocName.equals("APEX DIAGNOSTIC SERVICES (PVT.) LTD.")) {
 
             place_img.setImageResource(R.drawable.diaforlisdet);
             place_name.setText(getDocName);
@@ -44,7 +44,7 @@ public class DiaDetailsActivity extends AppCompatActivity {
 
 
         }
-        if (getDocName.equals("BANGLADESH DIAGNOSTIC")) {
+        if (getDocName.equals("BANGLADESH DIAGNOSTIC ")) {
 
             place_img.setImageResource(R.drawable.diaforlisdet);
             place_name.setText(getDocName);
@@ -79,7 +79,7 @@ public class DiaDetailsActivity extends AppCompatActivity {
             place_name.setText(getDocName);
             place_desc.setText("");
             place_location.setText("20, K.B. Fazlul Kader Road, Chittagong ");
-            place_contactNumbertext.setText(":031-652652");
+            place_contactNumbertext.setText("031-652652");
 
 
         }
@@ -95,7 +95,7 @@ public class DiaDetailsActivity extends AppCompatActivity {
 
         }
 
-        if (getDocName.equals("CARE INVESTIGATION")) {
+        if (getDocName.equals("CARE INVESTIGATION ")) {
 
             place_img.setImageResource(R.drawable.diaforlisdet);
             place_name.setText(getDocName);
@@ -105,7 +105,7 @@ public class DiaDetailsActivity extends AppCompatActivity {
 
 
         }
-        if (getDocName.equals("CENTRAL LAB")) {
+        if (getDocName.equals("CENTRAL LAB ")) {
 
             place_img.setImageResource(R.drawable.diaforlisdet);
             place_name.setText(getDocName);
@@ -139,7 +139,7 @@ public class DiaDetailsActivity extends AppCompatActivity {
 
         }
 
-        if (getDocName.equals("CHEVRON CLINICAL LABORATORY (PVT.) LTD")) {
+        if (getDocName.equals("CHEVRON CLINICAL LABORATORY (PVT.) LTD.")) {
 
             place_img.setImageResource(R.drawable.diaforlisdet);
             place_name.setText(getDocName);
@@ -150,7 +150,7 @@ public class DiaDetailsActivity extends AppCompatActivity {
 
 
         }
-        if (getDocName.equals("CHITTAGONG BELLEVUE LTD")) {
+        if (getDocName.equals("CHITTAGONG BELLEVUE LTD.")) {
 
             place_img.setImageResource(R.drawable.diaforlisdet);
             place_name.setText(getDocName);
@@ -160,7 +160,7 @@ public class DiaDetailsActivity extends AppCompatActivity {
 
 
         }
-        if (getDocName.equals("CHITTAGONG DOCTORS LAB (PVT.) LTD.")) {
+        if (getDocName.equals("CHITTAGONG DOCTORS LAB (PVT.) LTD. ")) {
 
             place_img.setImageResource(R.drawable.diaforlisdet);
             place_name.setText(getDocName);
@@ -170,7 +170,7 @@ public class DiaDetailsActivity extends AppCompatActivity {
 
 
         }
-        if (getDocName.equals("CHITTAGONG LAB LTD.")) {
+        if (getDocName.equals("CHITTAGONG LAB LTD. ")) {
 
             place_img.setImageResource(R.drawable.diaforlisdet);
             place_name.setText(getDocName);
@@ -241,7 +241,7 @@ public class DiaDetailsActivity extends AppCompatActivity {
 
 
         }
-        if (getDocName.equals("DIVINE DIAGNOSTIC LTD.")) {
+        if (getDocName.equals("DIVINE DIAGNOSTIC LTD. ")) {
 
             place_img.setImageResource(R.drawable.diaforlisdet);
             place_name.setText(getDocName);
@@ -251,7 +251,7 @@ public class DiaDetailsActivity extends AppCompatActivity {
 
 
         }
-        if (getDocName.equals("DR. MAHFUZUR RAHMAN'S LAB")) {
+        if (getDocName.equals("DR. MAHFUZUR RAHMAN'S LAB ")) {
 
             place_img.setImageResource(R.drawable.diaforlisdet);
             place_name.setText(getDocName);
@@ -271,7 +271,7 @@ public class DiaDetailsActivity extends AppCompatActivity {
 
 
         }
-        if (getDocName.equals("EAGLES EYE DIAGNOSTIC")) {
+        if (getDocName.equals("EAGLES EYE DIAGNOSTIC ")) {
 
             place_img.setImageResource(R.drawable.diaforlisdet);
             place_name.setText(getDocName);
@@ -281,7 +281,7 @@ public class DiaDetailsActivity extends AppCompatActivity {
 
 
         }
-        if (getDocName.equals("EVERGREEN CLINIC (PVT) LTD.")) {
+        if (getDocName.equals("EVERGREEN CLINIC (PVT) LTD. ")) {
 
             place_img.setImageResource(R.drawable.diaforlisdet);
             place_name.setText(getDocName);
@@ -331,7 +331,7 @@ public class DiaDetailsActivity extends AppCompatActivity {
 
 
         }
-        if (getDocName.equals("LANCET")) {
+        if (getDocName.equals("LANCET ")) {
 
             place_img.setImageResource(R.drawable.diaforlisdet);
             place_name.setText(getDocName);
@@ -342,7 +342,7 @@ public class DiaDetailsActivity extends AppCompatActivity {
 
 
         }
-        if (getDocName.equals("LIFE CARE CENTRE")) {
+        if (getDocName.equals("LIFE CARE CENTRE ")) {
 
             place_img.setImageResource(R.drawable.diaforlisdet);
             place_name.setText(getDocName);
@@ -372,7 +372,7 @@ public class DiaDetailsActivity extends AppCompatActivity {
 
 
         }
-        if (getDocName.equals("MEDI AID COMPLEX (PVT) LTD")) {
+        if (getDocName.equals("MEDI AID COMPLEX (PVT) LTD ")) {
 
             place_img.setImageResource(R.drawable.diaforlisdet);
             place_name.setText(getDocName);
