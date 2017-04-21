@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_emergency_sms"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/bg_gradient">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="490dp">
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:hint="Name"
+                    android:ems="10"
+                    android:id="@+id/etxtName" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:hint="Emegency Contact 1"
+                    android:ems="10"
+                    android:id="@+id/etxtNumber1" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:ems="10"
+                    android:id="@+id/etxtNumber2"
+                    android:hint="Emegency Contact 2" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:ems="10"
+                    android:id="@+id/etxtNumber3"
+                    android:hint="Emegency Contact 3" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/etxtMessage"
+                    android:hint="Message"
+                    android:layout_height="80dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:padding="10dp"
+                    android:ems="10"
+                    android:textSize="20sp"
+                    android:text="Location Loading..."
+                    android:id="@+id/etxtLocation"
+                    />
+
+                <LinearLayout
+                    android:weightSum="1"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+
+
+                    <Button
+                        android:layout_weight=".5"
+                        android:text="Edit"
+                        android:textColor="#FFFFFF"
+                        android:background="@drawable/button_shape"
+                        android:layout_width="152dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btnEdit" />
+
+                    <Button
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/button_shape"
+                        android:text="Save"
+                        android:textColor="#FFFFFF"
+                        android:layout_width="163dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btnSave" />
+
+                </LinearLayout>
+
+                <Button
+                    android:text="SEND"
+                    android:paddingLeft="10dp"
+                    android:drawableLeft="@drawable/sms"
+                    android:background="@drawable/button_shape"
+                    android:layout_margin="10dp"
+                    android:layout_width="315dp"
+                    android:layout_height="80dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp"
+                    android:id="@+id/btnSend" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

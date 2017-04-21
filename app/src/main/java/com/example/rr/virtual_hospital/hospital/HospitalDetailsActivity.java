@@ -35,7 +35,7 @@ public class HospitalDetailsActivity extends AppCompatActivity {
 
         if (getPlaceName.equals("C.S.C.R")) {
 
-            place_img.setImageResource(R.drawable.hospitalforlist);
+            place_img.setImageResource(R.drawable.ic_hospital);
             place_name.setText(getPlaceName);
             place_desc.setText("Center for Specialized Care & Research (CSCR), better known as CSCR, CSCR Chittagong, and Chittagong CSCR, is a leading clinical lab service centre in Chittagong consists of a full-featured hospital, diagnostic laboratory, and specialist doctors. It was established in 1999. Since then, CSCR has been providing high quality diagnostic laboratory services, renowned physicians and surgeons’ consultation services to the patients and a hospital with all modern facilities under one roof, first in its kind. CSCR Chittagong is always open (24/7) for the general public. ");
             place_location.setText("Probotok Moor , Chittagong.");
@@ -46,7 +46,7 @@ public class HospitalDetailsActivity extends AppCompatActivity {
 
         if (getPlaceName.equals("Chattagram Maa-Shishu General Hospital")) {
 
-            place_img.setImageResource(R.drawable.hospitalforlist);
+            place_img.setImageResource(R.drawable.ic_hospital);
             place_name.setText(getPlaceName);
             place_desc.setText("Chattagram Maa-O-Shishu Hospital Medical College (CMOSHMC) is a private medical college along with hospital in Bangladesh, established in 2005. It is located in Agrabad, Chittagong. It is affiliated with University of Chittagong.\n" +
 
@@ -57,7 +57,7 @@ public class HospitalDetailsActivity extends AppCompatActivity {
         }
         if (getPlaceName.equals("CHEVRON")) {
 
-            place_img.setImageResource(R.drawable.hospitalforlist);
+            place_img.setImageResource(R.drawable.ic_hospital);
             place_name.setText(getPlaceName);
             place_desc.setText("Chevron Clinical Laboratory (Pte.) Ltd. was incorporated on 22nd February, 1984, and started operation on 16th May, 1984, in Chittagong as an integrated investigative laboratory. It was a pioneering venture in the filed of automated diagnostics in Bangladesh. Beginning with an initial investment of Tk.7.5 million, the Company has grown over the year to a concern worth Tk.250 million in the year 2006.\n" +
                     "There is routine update of the technology in order to remain at per with international standard. Reputed Pathologists, Haematologist, Microbiologists, Histopathlogist, Bio-chemists, Sonologists, Radiologists, Gastroenterologists and Cardiologists supervice trained Paramedics and other personnel in ensuring the highest possible quality of services. For maintenance of the sophisticated equipments, a sound group of Electrical and Electronics Engineers are also at work.");
@@ -67,7 +67,7 @@ public class HospitalDetailsActivity extends AppCompatActivity {
         }
         if (getPlaceName.equals("Chittagong Health Care Hospital Pvt. Ltd.")) {
 
-            place_img.setImageResource(R.drawable.hospitalforlist);
+            place_img.setImageResource(R.drawable.ic_hospital);
             place_name.setText(getPlaceName);
             place_desc.setText("Specialized Hospital with ICU, CCU, NICU, KDU and General with VIP cabin for all Patients care according to need with all diagnostic supports.");
             place_location.setText("Mirzapul Rd, Chittagong, Bangladesh");
@@ -76,7 +76,7 @@ public class HospitalDetailsActivity extends AppCompatActivity {
         }
         if (getPlaceName.equals("Chittagong Metropolitan Hospital Pvt. Ltd.")) {
 
-            place_img.setImageResource(R.drawable.hospitalforlist);
+            place_img.setImageResource(R.drawable.ic_hospital);
             place_name.setText(getPlaceName);
             place_desc.setText("This is one of private hospital in chittagong city. Chittagong metropolitan hospital given best service with their patient. Here all of modern treatment equipment have but their treatment cost is little bit high.");
             place_location.setText("\n" +
@@ -87,7 +87,7 @@ public class HospitalDetailsActivity extends AppCompatActivity {
         }
         if (getPlaceName.equals("Chittagong Poly Clinic Pvt. Ltd.")) {
 
-            place_img.setImageResource(R.drawable.hospitalforlist);
+            place_img.setImageResource(R.drawable.ic_hospital);
             place_name.setText(getPlaceName);
             place_desc.setText("Specialized Hospital with ICU, CCU, NICU, KDU and General with VIP cabin for all Patients care.");
             place_location.setText("\n" +
@@ -98,7 +98,7 @@ public class HospitalDetailsActivity extends AppCompatActivity {
         }
         if (getPlaceName.equals("Ekhushe Hospital")) {
 
-            place_img.setImageResource(R.drawable.hospitalforlist);
+            place_img.setImageResource(R.drawable.ic_hospital);
             place_name.setText(getPlaceName);
             place_desc.setText("All kinds of health care services (including medical and surgical) are available here under direct supervision of consultants on different disciplines..");
             place_location.setText("Mirjarpool, Muradpur, Chittagong. (Sugandha Rd 2)\n" +
@@ -108,7 +108,7 @@ public class HospitalDetailsActivity extends AppCompatActivity {
         }
         if (getPlaceName.equals("General Hospital")) {
 
-            place_img.setImageResource(R.drawable.hospitalforlist);
+            place_img.setImageResource(R.drawable.ic_hospital);
             place_name.setText(getPlaceName);
             place_desc.setText("General Hospital, Chittagong was originally established as a dispensary in 1840. The clinic was developed into a General Hospital on the Rangmahal Hill in Andarkilla, Chittagong. This hill is historically important as the site of the Arakani Fort, which was burnt and ravaged by the action of the Mughal Navy in their endeavour to conquer Chittagong in AD 1666.\n" +
                     "\n" +
@@ -119,7 +119,7 @@ public class HospitalDetailsActivity extends AppCompatActivity {
         }
         if (getPlaceName.equals("Holy Crescent Hospital (Pvt.) Ltd")) {
 
-            place_img.setImageResource(R.drawable.hospitalforlist);
+            place_img.setImageResource(R.drawable.ic_hospital);
             place_name.setText(getPlaceName);
             place_desc.setText("All kinds of health care services (including medical and surgical) are available here under direct supervision of consultants on different disciplines..");
             place_location.setText("\n" +
@@ -139,7 +139,7 @@ public class HospitalDetailsActivity extends AppCompatActivity {
 //        }
             if (getPlaceName.equals("Memon City Corporation")) {
 
-                place_img.setImageResource(R.drawable.hospitalforlist);
+                place_img.setImageResource(R.drawable.ic_hospital);
                 place_name.setText(getPlaceName);
                 place_desc.setText("    To provide good health care services with operation facilities to the pregnant women with minimum cost.\n" +
                         "    Air conditioned general bed and cabin facilities.\n" +
@@ -160,7 +160,7 @@ public class HospitalDetailsActivity extends AppCompatActivity {
             }
             if (getPlaceName.equals("Medical Centre (Pvt) Clinic")) {
 
-                place_img.setImageResource(R.drawable.hospitalforlist);
+                place_img.setImageResource(R.drawable.ic_hospital);
                 place_name.setText(getPlaceName);
                 place_desc.setText("- Medicine Specialist\n" +
                         "- Nephrology & Medicine Specialist\n" +
@@ -189,7 +189,7 @@ public class HospitalDetailsActivity extends AppCompatActivity {
             }
             if (getPlaceName.equals("Mahanagar Clinic")) {
 
-                place_img.setImageResource(R.drawable.hospitalforlist);
+                place_img.setImageResource(R.drawable.ic_hospital);
                 place_name.setText(getPlaceName);
                 place_desc.setText("Anesthesia, E. C. G.,News paper & TV in waiting room,Operation theatre,Own diagnostic Lab,Oxygen supply,Pharmacy,Post operative bed,Ultra sonogram,Waiting room,X-Ray");
                 place_location.setText("20, O R Nizam Road, Panchlaish Chittagong");
@@ -198,7 +198,7 @@ public class HospitalDetailsActivity extends AppCompatActivity {
             }
             if (getPlaceName.equals("Labaid Specialized Hospital - Chittagong")) {
 
-                place_img.setImageResource(R.drawable.hospitalforlist);
+                place_img.setImageResource(R.drawable.ic_hospital);
                 place_name.setText(getPlaceName);
                 place_desc.setText("Anesthesia, E. C. G.,News paper & TV in waiting room,Operation theatre,Own diagnostic Lab,Oxygen supply,Pharmacy,Post operative bed,Ultra sonogram,Waiting room,X-Ray");
                 place_location.setText("Forum Central (2nd floor), 787/863 M M Ali Road, Gol Pahar Mor, Mehedi Bag, Chittagong");
@@ -209,7 +209,7 @@ public class HospitalDetailsActivity extends AppCompatActivity {
 
             if (getPlaceName.equals("Royal Hospital")) {
 
-                place_img.setImageResource(R.drawable.hospitalforlist);
+                place_img.setImageResource(R.drawable.ic_hospital);
                 place_name.setText(getPlaceName);
                 place_desc.setText("Anesthesia, E. C. G.,News paper & TV in waiting room,Operation theatre,Own diagnostic Lab,Oxygen supply,Pharmacy,Post operative bed,Ultra sonogram,Waiting room,X-Ray");
                 place_location.setText(" O.R. Nizam Rd, Chittagong, Bangladesh");

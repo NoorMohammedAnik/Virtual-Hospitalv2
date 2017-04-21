@@ -38,9 +38,9 @@ public class MainActivity extends AppCompatActivity {
         callForHelp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent in = new Intent(MainActivity.this,CallActivity.class);
+                Intent in = new Intent(MainActivity.this,EmergencySms.class);
                 startActivity(in);
-                Toast.makeText(MainActivity.this, "Call For Help", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "Emergency SMS", Toast.LENGTH_SHORT).show();
             }
         });
         firstAid.setOnClickListener(new View.OnClickListener() {

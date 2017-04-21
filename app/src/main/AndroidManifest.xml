@@ -7,8 +7,14 @@
          Google Maps Android API v2, but you must specify either coarse or fine
          location permissions for the 'MyLocation' functionality. 
     -->
+
+    <uses-permission android:name="android.permission.SEND_SMS"/>
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
 
     <application
         android:allowBackup="true"
@@ -20,8 +26,9 @@
         <activity android:name=".profile.VbActivity" />
         <activity android:name=".FirstAiActivity" />
         <activity android:name=".FirstAiDetActivity"/>
-        <activity android:name=".CallActivity" />
+        <activity android:name=".EmergencySms" />
         <activity android:name=".DiaActivity" />
+        <activity android:name=".hospital.HospitalDetailsActivity"/>
         <activity android:name=".DiaDetailsActivity"/>
         <activity android:name=".DocDetailsActivity"/>
         <activity android:name=".hospital.HospitalListActivity"/>

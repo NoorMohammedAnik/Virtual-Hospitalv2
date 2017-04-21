@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <de.hdodenhof.circleimageview.CircleImageView
+    <ImageView
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:padding="5dp"
@@ -33,6 +33,5 @@
         android:layout_height="20dp"
         android:id="@+id/imageView3"
         android:src="@drawable/right_arrow"
-        android:layout_alignBottom="@+id/itemName"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignBottom="@+id/itemName" />
 </RelativeLayout>

@@ -12,7 +12,11 @@
             android:layout_width="match_parent"
             android:layout_height="300dp"
             android:scaleType="fitXY"
-            android:src="@drawable/sea" />
+            android:padding="5dp"
+            android:src="@drawable/sea"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
 
 
 
@@ -33,6 +37,8 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="20dp"
                 android:text="Place Name"
+                android:padding="5dp"
+                android:gravity="center"
                 android:textColor="#fff"
                 android:textSize="24sp"
                 android:textStyle="bold" />
