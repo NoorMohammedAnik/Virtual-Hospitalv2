@@ -90,7 +90,7 @@ public class PagerAdapterSmall extends PagerAdapter {
         imageView.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View view) {
-                //TODO:implement the longclick in prescriptions
+
                 AlertDialog.Builder confirm= new AlertDialog.Builder(mContext);
                 confirm.setTitle("Sure you want to delete?")
                         .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
