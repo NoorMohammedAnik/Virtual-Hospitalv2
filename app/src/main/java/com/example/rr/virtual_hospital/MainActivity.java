@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent in = new Intent(MainActivity.this,VbActivity.class);
                 startActivity(in);
-                Toast.makeText(MainActivity.this, "Virtual Blood Bank", Toast.LENGTH_SHORT).show();
+              //  Toast.makeText(MainActivity.this, "Virtual Blood Bank", Toast.LENGTH_SHORT).show();
             }
         });
         callForHelp.setOnClickListener(new View.OnClickListener() {

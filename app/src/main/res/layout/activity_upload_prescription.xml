@@ -11,13 +11,14 @@
     android:padding="16dp"
     android:layout_height="match_parent"
     tools:context="com.example.rr.virtual_hospital.prescription.UploadPrescription">
-    <ImageView
+
+        <ImageView
         android:src="@drawable/presc_placeholder"
         android:id="@+id/prescription_selected_image_placeholder"
         android:layout_centerHorizontal="true"
         android:layout_width="match_parent"
         android:layout_height="400dp"
-        android:scaleType="fitXY"/>
+        android:scaleType="fitCenter"/>
 
     <EditText
         android:layout_below="@id/prescription_selected_image_placeholder"

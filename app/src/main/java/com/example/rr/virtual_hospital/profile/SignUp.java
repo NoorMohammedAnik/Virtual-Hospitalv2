@@ -3,6 +3,7 @@ package com.example.rr.virtual_hospital.profile;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.view.View;
@@ -43,10 +44,11 @@ public class SignUp extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
 
+
+        getSupportActionBar().setHomeButtonEnabled(true); //for back button
         getSupportActionBar().setHomeButtonEnabled(true); //for back button
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);//for back button
-        getSupportActionBar().setTitle("Registration");
-
+        getSupportActionBar().setTitle("Register");
 
         signQueue= Volley.newRequestQueue(this);
         userRegURL=getString(R.string.serverIp)+"registration.php";
@@ -90,7 +92,7 @@ public class SignUp extends AppCompatActivity {
                     requestFocus(edtPassword);
                 }
                 else if(name.isEmpty()){
-                    edtName.setError("Please Input Your Name");
+                    edtName.setError("Please Your Name");
                     requestFocus(edtName);
                 }
                 else{

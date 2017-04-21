@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="wrap_content"
-    android:padding="16dp">
+    android:background="@drawable/rec_border"
+    android:padding="16dp"
+    android:layout_margin="2dp">
 
     <ImageView
         android:src="@drawable/background"
@@ -12,30 +14,95 @@
 
     <LinearLayout
         android:layout_toRightOf="@id/user_picture"
-        android:layout_height="wrap_content"
+        android:layout_height="200dp"
         android:layout_width="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:weightSum="8">
 
         <TextView
+            android:layout_weight="1"
+            android:padding="1dp"
+            android:textAlignment="center"
+            android:background="@drawable/button3"
+            android:layout_gravity="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="NAME"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:textColor="#000000"
             android:id="@+id/recycler_each_name"
             android:layout_alignParentRight="true"
             android:text="NAME"
             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_weight="1"
+            android:padding="1dp"
+            android:textAlignment="center"
+            android:background="@drawable/button3"
+            android:layout_gravity="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15sp"
+            android:layout_alignParentRight="true"
+            android:text="BLOOD GROUP"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
         <TextView
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:textSize="20sp"
             android:id="@+id/recycler_each_blood_group"
             android:layout_alignParentRight="true"
             android:text="Bloodgroup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
+
         <TextView
+            android:layout_weight="1"
+            android:padding="1dp"
+            android:textAlignment="center"
+            android:background="@drawable/button3"
+            android:layout_gravity="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15sp"
+            android:layout_alignParentRight="true"
+            android:text="CONTACT NUMBER"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:textSize="20sp"
             android:id="@+id/recycler_each_mobile"
             android:layout_alignParentRight="true"
             android:text="contact Number"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
+
         <TextView
+            android:layout_weight="1"
+            android:padding="1dp"
+            android:textAlignment="center"
+            android:background="@drawable/button3"
+            android:layout_gravity="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15sp"
+            android:text="CITY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:textSize="20sp"
             android:id="@+id/recycler_each_division"
             android:text="City"
             android:layout_width="wrap_content"

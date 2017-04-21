@@ -14,7 +14,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Base64;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -56,6 +59,14 @@ public class UploadPrescription extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_upload_prescription);
+
+        getSupportActionBar().setHomeButtonEnabled(true); //for back button
+        getSupportActionBar().setHomeButtonEnabled(true); //for back button
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);//for back button
+        getSupportActionBar().setTitle("Upload Prescription");
+
+
+
         prescriptionTasksURL=getString(R.string.serverIp)+"prescription.php";
         prescReq= Volley.newRequestQueue(this);
 
@@ -183,13 +194,27 @@ public class UploadPrescription extends AppCompatActivity {
                         .into(prescImage);
 //                prescImage.setImageURI(selectedImage);
             }else if(requestCode==CAMERA_INTENT_REQUEST_CODE){
-                Bitmap picture= (Bitmap) data.getExtras().get("data");
-                prescImage.setImageBitmap(picture);
+                Uri selectedImage= (Uri) data.getExtras().get("data");
+
+                Glide.with(UploadPrescription.this)
+                        .load(selectedImage)
+                        .into(prescImage);
+
+              //  prescImage.setImageBitmap(picture);
             }
 
         }
     }
 
-
+    public boolean onOptionsItemSelected (MenuItem item){
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                // app icon in action bar clicked; goto parent activity.
+                this.finish();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
 
 }

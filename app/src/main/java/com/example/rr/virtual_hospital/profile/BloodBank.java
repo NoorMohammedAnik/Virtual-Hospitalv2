@@ -1,11 +1,13 @@
 package com.example.rr.virtual_hospital.profile;
 
+import android.app.ProgressDialog;
 import android.content.res.Resources;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -43,6 +45,7 @@ public class BloodBank extends AppCompatActivity {
     private String[] cities,bloodGroups;
     private String alldataURL;
     private RequestQueue directoryReq;
+    private ProgressDialog pd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,12 +54,20 @@ public class BloodBank extends AppCompatActivity {
 
         alldataURL=getResources().getString(R.string.serverIp)+"blood_bank_data.php";
 
+        getSupportActionBar().setHomeButtonEnabled(true); //for back button
+        getSupportActionBar().setHomeButtonEnabled(true); //for back button
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);//for back button
+        getSupportActionBar().setTitle("Find Blood");
+
         users=new ArrayList<>();
         directoryRecycler= (RecyclerView) findViewById(R.id.recycler_directory);
         RecyclerView.LayoutManager llm= new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false);
         directoryRecycler.setLayoutManager(llm);
         directoryRecyclerAdapter=new RecyclerAdapter(users,this);
         directoryRecycler.setAdapter(directoryRecyclerAdapter);
+        pd=new ProgressDialog(this);
+        pd.setTitle("Loading....");
+        pd.setCancelable(true);
 
         spn_filter_city=(Spinner) findViewById(R.id.spn_filter_city);
         spn_filter_blood_group= (Spinner) findViewById(R.id.spn_filter_blood_group);
@@ -144,6 +155,7 @@ public class BloodBank extends AppCompatActivity {
 
     //fetch all data
     private void fetchDataFromServer(final String task){
+        pd.show();
         StringRequest alldata=new StringRequest(Request.Method.POST, alldataURL, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
@@ -165,11 +177,13 @@ public class BloodBank extends AppCompatActivity {
                     e.printStackTrace();
                 }
                 directoryRecyclerAdapter.notifyDataSetChanged();
+                pd.dismiss();
             }
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
                 Log.d("directoryError",error.toString());
+                pd.dismiss();
             }
         }){
             @Override
@@ -183,6 +197,7 @@ public class BloodBank extends AppCompatActivity {
     }
 
     private void fetchDataFromServer(final String task, final String city,final String bloodgroup) {
+        pd.show();
         StringRequest alldata=new StringRequest(Request.Method.POST, alldataURL, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
@@ -203,11 +218,13 @@ public class BloodBank extends AppCompatActivity {
                     e.printStackTrace();
                 }
                 directoryRecyclerAdapter.notifyDataSetChanged();
+                pd.dismiss();
             }
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
                 Log.d("directoryError",error.toString());
+                pd.dismiss();
             }
         }){
             @Override
@@ -222,5 +239,16 @@ public class BloodBank extends AppCompatActivity {
             }
         };
         directoryReq.add(alldata);
+    }
+
+    public boolean onOptionsItemSelected (MenuItem item){
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                // app icon in action bar clicked; goto parent activity.
+                this.finish();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 }

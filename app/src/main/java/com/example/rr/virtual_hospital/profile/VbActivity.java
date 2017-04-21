@@ -47,16 +47,16 @@ public class VbActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vb);
 
+        getSupportActionBar().setHomeButtonEnabled(true); //for back button
+        getSupportActionBar().setHomeButtonEnabled(true); //for back button
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);//for back button
+        getSupportActionBar().setTitle("Login");
+
         URL=getString(R.string.serverIp)+"login.php";
         userMobile =(EditText)findViewById(R.id.txt_cell);
         password =(EditText)findViewById(R.id.txtPass);
         submit=(Button)findViewById(R.id.btn_login);
         signUp=(Button)findViewById(R.id.btn_register);
-
-        getSupportActionBar().setHomeButtonEnabled(true); //for back button
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);//for back button
-        getSupportActionBar().setTitle("Login");
-
 
         sp=getSharedPreferences("vHospUserData",MODE_PRIVATE);
 
@@ -149,11 +149,7 @@ public class VbActivity extends AppCompatActivity {
 
         logReq.add(loginReq);
     }
-
-
-    //for back button
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
+    public boolean onOptionsItemSelected (MenuItem item){
         switch (item.getItemId()) {
             case android.R.id.home:
                 // app icon in action bar clicked; goto parent activity.
