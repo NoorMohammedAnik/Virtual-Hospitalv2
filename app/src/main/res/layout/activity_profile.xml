@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/profile_layout_content"
     tools:context="com.example.rr.virtual_hospital.profile.Profile">
 
 

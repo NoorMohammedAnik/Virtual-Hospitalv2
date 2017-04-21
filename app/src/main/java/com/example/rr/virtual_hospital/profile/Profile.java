@@ -4,11 +4,13 @@ import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.support.design.widget.Snackbar;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -60,6 +62,12 @@ public class Profile extends AppCompatActivity implements View.OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
+
+        getSupportActionBar().setHomeButtonEnabled(true); //for back button
+        getSupportActionBar().setHomeButtonEnabled(true); //for back button
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);//for back button
+        getSupportActionBar().setTitle("Profile");
+
         viewPagerSmall=(ViewPager) findViewById(R.id.small_swipe_presc);
         profileDataURL=getString(R.string.serverIp)+"profile.php";
         name = (MyTextView) findViewById(R.id.txt_profile_name);
@@ -76,6 +84,15 @@ public class Profile extends AppCompatActivity implements View.OnClickListener {
         loading = new ProgressDialog(this);
         loading.setTitle("Loading...");
         loading.setMessage("Loading profile information");
+        View view= findViewById(R.id.profile_layout_content);
+       final Snackbar sn= Snackbar.make(view,"Slide the pictures above to See Your Uploaded Prescriptions",Snackbar.LENGTH_INDEFINITE);
+
+        sn.setAction("OK", new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                sn.dismiss();
+            }
+        }).show();
 
         llname = (LinearLayout) findViewById(R.id.profile_llname);
         llcell = (LinearLayout) findViewById(R.id.profile_llcell);
@@ -97,12 +114,14 @@ public class Profile extends AppCompatActivity implements View.OnClickListener {
         btnUploadActivity.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                finish();
                 startActivity(new Intent(Profile.this, UploadPrescription.class));
             }
         });
         btnDirectory.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                finish();
                 startActivity(new Intent(Profile.this,BloodBank.class));
             }
         });
@@ -116,7 +135,9 @@ public class Profile extends AppCompatActivity implements View.OnClickListener {
                 startActivity(new Intent(Profile.this, MainActivity.class));
             }
         });
+
     }
+
 
     private void fetchUserProfileFromServer() {
         loading.show();
@@ -317,5 +338,16 @@ public class Profile extends AppCompatActivity implements View.OnClickListener {
         };
 
         rq.add(profileRequest);
+    }
+
+    public boolean onOptionsItemSelected (MenuItem item){
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                // app icon in action bar clicked; goto parent activity.
+                this.finish();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 }
