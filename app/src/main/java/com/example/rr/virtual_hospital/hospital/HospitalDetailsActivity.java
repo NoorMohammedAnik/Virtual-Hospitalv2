@@ -96,7 +96,7 @@ public class HospitalDetailsActivity extends AppCompatActivity {
 
 
         }
-        if (getPlaceName.equals("Ekhushe Hospital")) {
+        if (getPlaceName.equals(" Ekhushe Hospital")) {
 
             place_img.setImageResource(R.drawable.ic_hospital);
             place_name.setText(getPlaceName);
