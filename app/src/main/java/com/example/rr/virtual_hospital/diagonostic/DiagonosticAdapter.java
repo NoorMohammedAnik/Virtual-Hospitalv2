@@ -1,4 +1,4 @@
-package com.example.rr.virtual_hospital;
+package com.example.rr.virtual_hospital.diagonostic;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -9,27 +9,34 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.rr.virtual_hospital.R;
+
 /**
  * Created by R.R on 4/20/2017.
  */
 
-public class FirstAid extends BaseAdapter {
+public class DiagonosticAdapter extends BaseAdapter {
 
-    String[] firstName;
+    String[] diaName;
     int flags[];
     LayoutInflater inflater;
 
 
-    public FirstAid(Context context, String[] firstName, int[]flags )
+    public DiagonosticAdapter(Context context, String[] diaName, int[]flags )
     {
 
-        this.firstName=firstName;
+        this.diaName=diaName;
         this.flags=flags;
         inflater=(LayoutInflater.from(context));
 
-    } @Override
+    }
+
+
+
+
+    @Override
     public int getCount() {
-        return firstName.length;
+        return diaName.length;
     }
 
     @Override
@@ -44,11 +51,11 @@ public class FirstAid extends BaseAdapter {
 
     @Override
     public View getView(int position, View view, ViewGroup viewGroup) {
-        view=inflater.inflate(R.layout.first,viewGroup,false);
+        view=inflater.inflate(R.layout.dia_list,viewGroup,false);
 
-        TextView textView=(TextView)view.findViewById(R.id.textViewFirstaid);
-        ImageView imageView= (ImageView)view.findViewById(R.id.imageViewFirstAid);
-        textView.setText(firstName[position]);
+        TextView textView=(TextView)view.findViewById(R.id.textViewDia);
+        ImageView imageView= (ImageView)view.findViewById(R.id.imageViewDia);
+        textView.setText(diaName[position]);
         textView.setTextColor(Color.BLUE);
         imageView.setImageResource(flags[0]);
         return view;

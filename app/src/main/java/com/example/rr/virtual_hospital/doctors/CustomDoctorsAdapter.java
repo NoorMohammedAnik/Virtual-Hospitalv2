@@ -1,4 +1,4 @@
-package com.example.rr.virtual_hospital;
+package com.example.rr.virtual_hospital.doctors;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -9,20 +9,20 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import static com.example.rr.virtual_hospital.R.id.parent;
+import com.example.rr.virtual_hospital.R;
 
 /**
  * Created by R.R on 4/19/2017.
  */
 
-public class CustomForDoc extends BaseAdapter {
+public class CustomDoctorsAdapter extends BaseAdapter {
 
     String[] docName;
     int flags[];
     LayoutInflater inflater;
 
 
-    public CustomForDoc(Context context, String[] docName, int[]flags )
+    public CustomDoctorsAdapter(Context context, String[] docName, int[]flags )
     {
 
         this.docName=docName;

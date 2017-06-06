@@ -5,12 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    tools:context="com.example.rr.virtual_hospital.AmbulanceActivity">
+    tools:context="com.example.rr.virtual_hospital.ambulance.AmbulanceActivity">
 
     <ListView
         android:id="@+id/listViewAmbu"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:divider="@color/colorPrimaryDark"
+        android:dividerHeight="1dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 </RelativeLayout>

@@ -7,6 +7,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.rr.virtual_hospital.ambulance.AmbulanceActivity;
+import com.example.rr.virtual_hospital.diagonostic.DiagonosticActivity;
+import com.example.rr.virtual_hospital.doctors.DoctorsActivity;
+import com.example.rr.virtual_hospital.emergency_sms.EmergencySms;
+import com.example.rr.virtual_hospital.firstaid.FirstAiActivity;
 import com.example.rr.virtual_hospital.hospital.HospitalListActivity;
 import com.example.rr.virtual_hospital.maps.MapsActivity;
 import com.example.rr.virtual_hospital.profile.VbActivity;
@@ -62,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
         diago.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent in = new Intent(MainActivity.this,DiaActivity.class);
+                Intent in = new Intent(MainActivity.this,DiagonosticActivity.class);
                 startActivity(in);
                 Toast.makeText(MainActivity.this, "Diagnostic Center", Toast.LENGTH_SHORT).show();
             }
@@ -78,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
         doc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent= new Intent(MainActivity.this,DocsActivity.class);
+                Intent intent= new Intent(MainActivity.this,DoctorsActivity.class);
                 startActivity(intent);
                 Toast.makeText(MainActivity.this, "Doctors List", Toast.LENGTH_SHORT).show();
             }

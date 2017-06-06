@@ -1,10 +1,12 @@
-package com.example.rr.virtual_hospital;
+package com.example.rr.virtual_hospital.ambulance;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.rr.virtual_hospital.R;
 
 public class AmbulanceDetActivity extends AppCompatActivity {
     ImageView place_img;
@@ -169,7 +171,7 @@ public class AmbulanceDetActivity extends AppCompatActivity {
 
         }
 
-        if (getAmbuName.equals("Surgiscope Pvt. Ltd")) {
+        if (getAmbuName.equals("Surgiscope Pvt. Ltd.")) {
 
             place_img.setImageResource(R.drawable.amb);
             ambulance_name.setText(getAmbuName);

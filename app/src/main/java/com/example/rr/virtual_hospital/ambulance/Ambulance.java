@@ -1,7 +1,6 @@
-package com.example.rr.virtual_hospital;
+package com.example.rr.virtual_hospital.ambulance;
 
 import android.content.Context;
-import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,32 +8,30 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.rr.virtual_hospital.R;
+
 /**
- * Created by R.R on 4/20/2017.
+ * Created by R.R on 4/19/2017.
  */
 
-public class Diago extends BaseAdapter {
+public class Ambulance extends BaseAdapter {
 
-    String[] diaName;
-    int flags[];
+    String[] ambulanceList;
+    int[] flags;
     LayoutInflater inflater;
 
 
-    public Diago(Context context, String[] diaName, int[]flags )
+    public Ambulance(Context context, String[] ambulanceList, int[]flags )
     {
 
-        this.diaName=diaName;
+        this.ambulanceList=ambulanceList;
         this.flags=flags;
         inflater=(LayoutInflater.from(context));
 
     }
 
-
-
-
-    @Override
     public int getCount() {
-        return diaName.length;
+        return ambulanceList.length;
     }
 
     @Override
@@ -49,13 +46,13 @@ public class Diago extends BaseAdapter {
 
     @Override
     public View getView(int position, View view, ViewGroup viewGroup) {
-        view=inflater.inflate(R.layout.dia_list,viewGroup,false);
-
-        TextView textView=(TextView)view.findViewById(R.id.textViewDia);
-        ImageView imageView= (ImageView)view.findViewById(R.id.imageViewDia);
-        textView.setText(diaName[position]);
-        textView.setTextColor(Color.BLUE);
+        view=inflater.inflate(R.layout.ambulance,viewGroup,false);
+        TextView textView=(TextView)view.findViewById(R.id.textViewAmbu);
+        ImageView imageView=(ImageView)view.findViewById(R.id.imageViewAmbu);
+        textView.setText(ambulanceList[position]);
         imageView.setImageResource(flags[0]);
+
         return view;
+
     }
 }

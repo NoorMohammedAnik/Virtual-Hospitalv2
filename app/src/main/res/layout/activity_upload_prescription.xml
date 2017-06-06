@@ -10,6 +10,7 @@
     android:layout_width="match_parent"
     android:padding="16dp"
     android:layout_height="match_parent"
+        android:background="@drawable/bg_gradient"
     tools:context="com.example.rr.virtual_hospital.prescription.UploadPrescription">
 
         <ImageView
@@ -27,16 +28,22 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-    <Button
+    <com.github.rubensousa.raiflatbutton.RaiflatButton
         android:layout_below="@id/input_prescription_name"
         android:id="@+id/button_prescription_select"
         android:text="Select Image"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
-    <Button
+
+
+    <com.github.rubensousa.raiflatbutton.RaiflatButton
         android:layout_below="@id/button_prescription_select"
         android:id="@+id/button_prescription_upload"
         android:text="Upload"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 

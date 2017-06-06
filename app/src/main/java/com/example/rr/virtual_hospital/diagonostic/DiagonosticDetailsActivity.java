@@ -1,4 +1,4 @@
-package com.example.rr.virtual_hospital;
+package com.example.rr.virtual_hospital.diagonostic;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -6,7 +6,9 @@ import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class DiaDetailsActivity extends AppCompatActivity {
+import com.example.rr.virtual_hospital.R;
+
+public class DiagonosticDetailsActivity extends AppCompatActivity {
     ImageView place_img;
     TextView place_name,place_desc,place_location,place_contactNumbertext;
     @Override
@@ -29,7 +31,7 @@ public class DiaDetailsActivity extends AppCompatActivity {
 
         if (getDocName.equals("APEX DIAGNOSTIC SERVICES (PVT.) LTD.")) {
 
-            place_img.setImageResource(R.drawable.diaforlisdet);
+            place_img.setImageResource(R.drawable.firstaiddet);
             place_name.setText(getDocName);
             place_desc.setText("Diagnostic Services; \n" +
                     "Clinic; \n" +
@@ -46,7 +48,7 @@ public class DiaDetailsActivity extends AppCompatActivity {
         }
         if (getDocName.equals("BANGLADESH DIAGNOSTIC ")) {
 
-            place_img.setImageResource(R.drawable.diaforlisdet);
+            place_img.setImageResource(R.drawable.firstaiddet);
             place_name.setText(getDocName);
             place_desc.setText("Diagnostic Services; \n" +
                     "Clinic; \n" +
@@ -64,7 +66,7 @@ public class DiaDetailsActivity extends AppCompatActivity {
 
         if (getDocName.equals("BIOPATH LABORATORY")) {
 
-            place_img.setImageResource(R.drawable.diaforlisdet);
+            place_img.setImageResource(R.drawable.firstaiddet);
             place_name.setText(getDocName);
             place_desc.setText("Diagnostic Services; \n" +
                     "Clinic; \n" +
@@ -81,7 +83,7 @@ public class DiaDetailsActivity extends AppCompatActivity {
 
         if (getDocName.equals("BASIC LAB")) {
 
-            place_img.setImageResource(R.drawable.diaforlisdet);
+            place_img.setImageResource(R.drawable.firstaiddet);
             place_name.setText(getDocName);
             place_desc.setText("Diagnostic Services; \n" +
                     "Clinic; \n" +
@@ -98,7 +100,7 @@ public class DiaDetailsActivity extends AppCompatActivity {
 
         if (getDocName.equals("BIOCHEMISTRY LAB")) {
 
-            place_img.setImageResource(R.drawable.diaforlisdet);
+            place_img.setImageResource(R.drawable.firstaiddet);
             place_name.setText(getDocName);
             place_desc.setText("Diagnostic Services; \n" +
                     "Clinic; \n" +
@@ -115,7 +117,7 @@ public class DiaDetailsActivity extends AppCompatActivity {
 
         if (getDocName.equals("CARE INVESTIGATION ")) {
 
-            place_img.setImageResource(R.drawable.diaforlisdet);
+            place_img.setImageResource(R.drawable.firstaiddet);
             place_name.setText(getDocName);
             place_desc.setText("Diagnostic Services; \n" +
                     "Clinic; \n" +
@@ -131,7 +133,7 @@ public class DiaDetailsActivity extends AppCompatActivity {
         }
         if (getDocName.equals("CENTRAL LAB ")) {
 
-            place_img.setImageResource(R.drawable.diaforlisdet);
+            place_img.setImageResource(R.drawable.firstaiddet);
             place_name.setText(getDocName);
             place_desc.setText("Diagnostic Services; \n" +
                     "Clinic; \n" +
@@ -148,7 +150,7 @@ public class DiaDetailsActivity extends AppCompatActivity {
         }
         if (getDocName.equals("CHATTAGRAM METROPOLITAN HOSPITAL (PVT) LTD.")) {
 
-            place_img.setImageResource(R.drawable.diaforlisdet);
+            place_img.setImageResource(R.drawable.firstaiddet);
             place_name.setText(getDocName);
             place_desc.setText("Diagnostic Services; \n" +
                     "Clinic; \n" +
@@ -166,7 +168,7 @@ public class DiaDetailsActivity extends AppCompatActivity {
 
         if (getDocName.equals("CHECK UP MEDICAL SERVICES LTD. ")) {
 
-            place_img.setImageResource(R.drawable.diaforlisdet);
+            place_img.setImageResource(R.drawable.firstaiddet);
             place_name.setText(getDocName);
             place_desc.setText("Diagnostic Services; \n" +
                     "Clinic; \n" +
@@ -183,7 +185,7 @@ public class DiaDetailsActivity extends AppCompatActivity {
 
         if (getDocName.equals("CHEVRON CLINICAL LABORATORY (PVT.) LTD.")) {
 
-            place_img.setImageResource(R.drawable.diaforlisdet);
+            place_img.setImageResource(R.drawable.firstaiddet);
             place_name.setText(getDocName);
             place_desc.setText("Diagnostic Services; \n" +
                     "Clinic; \n" +
@@ -200,7 +202,7 @@ public class DiaDetailsActivity extends AppCompatActivity {
         }
         if (getDocName.equals("CHITTAGONG BELLEVUE LTD.")) {
 
-            place_img.setImageResource(R.drawable.diaforlisdet);
+            place_img.setImageResource(R.drawable.firstaiddet);
             place_name.setText(getDocName);
             place_desc.setText("Diagnostic Services; \n" +
                     "Clinic; \n" +
@@ -216,7 +218,7 @@ public class DiaDetailsActivity extends AppCompatActivity {
         }
         if (getDocName.equals("CHITTAGONG DOCTORS LAB (PVT.) LTD. ")) {
 
-            place_img.setImageResource(R.drawable.diaforlisdet);
+            place_img.setImageResource(R.drawable.firstaiddet);
             place_name.setText(getDocName);
             place_desc.setText("Diagnostic Services; \n" +
                     "Clinic; \n" +
@@ -232,7 +234,7 @@ public class DiaDetailsActivity extends AppCompatActivity {
         }
         if (getDocName.equals("CHITTAGONG LAB LTD. ")) {
 
-            place_img.setImageResource(R.drawable.diaforlisdet);
+            place_img.setImageResource(R.drawable.firstaiddet);
             place_name.setText(getDocName);
             place_desc.setText("Diagnostic Services; \n" +
                     "Clinic; \n" +
@@ -248,7 +250,7 @@ public class DiaDetailsActivity extends AppCompatActivity {
         }
         if (getDocName.equals("CHITTAGONG POLY CLINIC (PVT) LTD")) {
 
-            place_img.setImageResource(R.drawable.diaforlisdet);
+            place_img.setImageResource(R.drawable.firstaiddet);
             place_name.setText(getDocName);
             place_desc.setText("Diagnostic Services; \n" +
                     "Clinic; \n" +
@@ -264,7 +266,7 @@ public class DiaDetailsActivity extends AppCompatActivity {
         }
         if (getDocName.equals("CITY HEALTH CLINIC ")) {
 
-            place_img.setImageResource(R.drawable.diaforlisdet);
+            place_img.setImageResource(R.drawable.firstaiddet);
             place_name.setText(getDocName);
             place_desc.setText("Diagnostic Services; \n" +
                     "Clinic; \n" +
@@ -280,7 +282,7 @@ public class DiaDetailsActivity extends AppCompatActivity {
         }
         if (getDocName.equals("CRESCENT DIAGNOSIS ")) {
 
-            place_img.setImageResource(R.drawable.diaforlisdet);
+            place_img.setImageResource(R.drawable.firstaiddet);
             place_name.setText(getDocName);
             place_desc.setText("Diagnostic Services; \n" +
                     "Clinic; \n" +
@@ -296,7 +298,7 @@ public class DiaDetailsActivity extends AppCompatActivity {
         }
         if (getDocName.equals("C.T. IMAGING & DIAGNOSTIC CENTRE LTD. ")) {
 
-            place_img.setImageResource(R.drawable.diaforlisdet);
+            place_img.setImageResource(R.drawable.firstaiddet);
             place_name.setText(getDocName);
             place_desc.setText("Diagnostic Services; \n" +
                     "Clinic; \n" +
@@ -312,7 +314,7 @@ public class DiaDetailsActivity extends AppCompatActivity {
         }
         if (getDocName.equals("CHITTAGONG METROPOLITAN HASPATAL DIAGNOSTIC LABORATORY")) {
 
-            place_img.setImageResource(R.drawable.diaforlisdet);
+            place_img.setImageResource(R.drawable.firstaiddet);
             place_name.setText(getDocName);
             place_desc.setText("Diagnostic Services; \n" +
                     "Clinic; \n" +
@@ -328,7 +330,7 @@ public class DiaDetailsActivity extends AppCompatActivity {
         }
         if (getDocName.equals("DIASONIC DIAGNOSTIC CENTRE")) {
 
-            place_img.setImageResource(R.drawable.diaforlisdet);
+            place_img.setImageResource(R.drawable.firstaiddet);
             place_name.setText(getDocName);
             place_desc.setText("Diagnostic Services; \n" +
                     "Clinic; \n" +
@@ -345,7 +347,7 @@ public class DiaDetailsActivity extends AppCompatActivity {
         }
         if (getDocName.equals("DIVINE DIAGNOSTIC LTD. ")) {
 
-            place_img.setImageResource(R.drawable.diaforlisdet);
+            place_img.setImageResource(R.drawable.firstaiddet);
             place_name.setText(getDocName);
             place_desc.setText("Diagnostic Services; \n" +
                     "Clinic; \n" +
@@ -361,7 +363,7 @@ public class DiaDetailsActivity extends AppCompatActivity {
         }
         if (getDocName.equals("DR. MAHFUZUR RAHMAN'S LAB ")) {
 
-            place_img.setImageResource(R.drawable.diaforlisdet);
+            place_img.setImageResource(R.drawable.firstaiddet);
             place_name.setText(getDocName);
             place_desc.setText("Diagnostic Services; \n" +
                     "Clinic; \n" +
@@ -377,7 +379,7 @@ public class DiaDetailsActivity extends AppCompatActivity {
         }
         if (getDocName.equals("DR. MUSH DENTAL CLINIC ")) {
 
-            place_img.setImageResource(R.drawable.diaforlisdet);
+            place_img.setImageResource(R.drawable.firstaiddet);
             place_name.setText(getDocName);
             place_desc.setText("Diagnostic Services; \n" +
                     "Clinic; \n" +
@@ -393,7 +395,7 @@ public class DiaDetailsActivity extends AppCompatActivity {
         }
         if (getDocName.equals("EAGLES EYE DIAGNOSTIC ")) {
 
-            place_img.setImageResource(R.drawable.diaforlisdet);
+            place_img.setImageResource(R.drawable.firstaiddet);
             place_name.setText(getDocName);
             place_desc.setText("Diagnostic Services; \n" +
                     "Clinic; \n" +
@@ -409,7 +411,7 @@ public class DiaDetailsActivity extends AppCompatActivity {
         }
         if (getDocName.equals("EVERGREEN CLINIC (PVT) LTD. ")) {
 
-            place_img.setImageResource(R.drawable.diaforlisdet);
+            place_img.setImageResource(R.drawable.firstaiddet);
             place_name.setText(getDocName);
             place_desc.setText("Diagnostic Services; \n" +
                     "Clinic; \n" +
@@ -425,7 +427,7 @@ public class DiaDetailsActivity extends AppCompatActivity {
         }
         if (getDocName.equals("HEALTH HOME PVT. LTD.")) {
 
-            place_img.setImageResource(R.drawable.diaforlisdet);
+            place_img.setImageResource(R.drawable.firstaiddet);
             place_name.setText(getDocName);
             place_desc.setText("Diagnostic Services; \n" +
                     "Clinic; \n" +
@@ -441,7 +443,7 @@ public class DiaDetailsActivity extends AppCompatActivity {
         }
         if (getDocName.equals("HEALTH SENSE DIAGNOSTIC CENTRE")) {
 
-            place_img.setImageResource(R.drawable.diaforlisdet);
+            place_img.setImageResource(R.drawable.firstaiddet);
             place_name.setText(getDocName);
             place_desc.setText("Diagnostic Services; \n" +
                     "Clinic; \n" +
@@ -457,7 +459,7 @@ public class DiaDetailsActivity extends AppCompatActivity {
         }
         if (getDocName.equals("KIDNEY DIAGNOSTIC COMPLEX ")) {
 
-            place_img.setImageResource(R.drawable.diaforlisdet);
+            place_img.setImageResource(R.drawable.firstaiddet);
             place_name.setText(getDocName);
             place_desc.setText("Diagnostic Services; \n" +
                     "Clinic; \n" +
@@ -473,7 +475,7 @@ public class DiaDetailsActivity extends AppCompatActivity {
         }
         if (getDocName.equals("LAB EXPERTS (PVT) LTD.")) {
 
-            place_img.setImageResource(R.drawable.diaforlisdet);
+            place_img.setImageResource(R.drawable.firstaiddet);
             place_name.setText(getDocName);
             place_desc.setText("Diagnostic Services; \n" +
                     "Clinic; \n" +
@@ -489,7 +491,7 @@ public class DiaDetailsActivity extends AppCompatActivity {
         }
         if (getDocName.equals("LANCET ")) {
 
-            place_img.setImageResource(R.drawable.diaforlisdet);
+            place_img.setImageResource(R.drawable.firstaiddet);
             place_name.setText(getDocName);
             place_desc.setText("Diagnostic Services; \n" +
                     "Clinic; \n" +
@@ -506,7 +508,7 @@ public class DiaDetailsActivity extends AppCompatActivity {
         }
         if (getDocName.equals("LIFE CARE CENTRE ")) {
 
-            place_img.setImageResource(R.drawable.diaforlisdet);
+            place_img.setImageResource(R.drawable.firstaiddet);
             place_name.setText(getDocName);
             place_desc.setText("Diagnostic Services; \n" +
                     "Clinic; \n" +
@@ -522,7 +524,7 @@ public class DiaDetailsActivity extends AppCompatActivity {
         }
         if (getDocName.equals("MAGNUM DIAGNOSTIC COMPLEX ")) {
 
-            place_img.setImageResource(R.drawable.diaforlisdet);
+            place_img.setImageResource(R.drawable.firstaiddet);
             place_name.setText(getDocName);
             place_desc.setText("Diagnostic Services; \n" +
                     "Clinic; \n" +
@@ -538,7 +540,7 @@ public class DiaDetailsActivity extends AppCompatActivity {
         }
         if (getDocName.equals("MAHANAGAR CLINIC (PVT) LTD.")) {
 
-            place_img.setImageResource(R.drawable.diaforlisdet);
+            place_img.setImageResource(R.drawable.firstaiddet);
             place_name.setText(getDocName);
             place_desc.setText("Diagnostic Services; \n" +
                     "Clinic; \n" +
@@ -552,9 +554,9 @@ public class DiaDetailsActivity extends AppCompatActivity {
 
 
         }
-        if (getDocName.equals("MEDI AID COMPLEX (PVT) LTD ")) {
+        if (getDocName.equals("MEDI AID COMPLEX (PVT) LTD")) {
 
-            place_img.setImageResource(R.drawable.diaforlisdet);
+            place_img.setImageResource(R.drawable.firstaiddet);
             place_name.setText(getDocName);
             place_desc.setText("Diagnostic Services; \n" +
                     "Clinic; \n" +
@@ -570,7 +572,7 @@ public class DiaDetailsActivity extends AppCompatActivity {
         }
         if (getDocName.equals("MEDICAL CENTRE (PVT) CLINIC ")) {
 
-            place_img.setImageResource(R.drawable.diaforlisdet);
+            place_img.setImageResource(R.drawable.firstaiddet);
             place_name.setText(getDocName);
             place_desc.setText("Diagnostic Services; \n" +
                     "Clinic; \n" +
@@ -587,7 +589,7 @@ public class DiaDetailsActivity extends AppCompatActivity {
         }
         if (getDocName.equals("MEDICAL POINT")) {
 
-            place_img.setImageResource(R.drawable.diaforlisdet);
+            place_img.setImageResource(R.drawable.firstaiddet);
             place_name.setText(getDocName);
             place_desc.setText("Diagnostic Services; \n" +
                     "Clinic; \n" +
@@ -603,7 +605,7 @@ public class DiaDetailsActivity extends AppCompatActivity {
         }
         if (getDocName.equals("METRO DIAGNOSTI CENTER LIMITED")) {
 
-            place_img.setImageResource(R.drawable.diaforlisdet);
+            place_img.setImageResource(R.drawable.firstaiddet);
             place_name.setText(getDocName);
             place_desc.setText("Diagnostic Services; \n" +
                     "Clinic; \n" +

@@ -3,7 +3,6 @@ package com.example.rr.virtual_hospital;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.Toast;
 
 
 
@@ -23,7 +22,7 @@ public class SplashActivity extends AppCompatActivity {
             public void run() {
                 Intent in = new Intent(SplashActivity.this,MainActivity.class);
                 startActivity(in);
-                Toast.makeText(SplashActivity.this, "App Starting", Toast.LENGTH_SHORT).show();
+               // Toast.makeText(SplashActivity.this, "App Starting", Toast.LENGTH_SHORT).show();
                 finish();
             }
         },SplashTime);

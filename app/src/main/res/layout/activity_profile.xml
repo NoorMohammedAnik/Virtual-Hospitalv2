@@ -306,20 +306,23 @@
 
             </LinearLayout>
 
-        <Button
+        <com.github.rubensousa.raiflatbutton.RaiflatButton
+            style="@style/Base.Widget.AppCompat.Button.Colored"
             android:id="@+id/btn_upload_prescs"
             android:layout_below="@id/spc"
             android:text="Upload Prescription"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
-        <Button
+        <com.github.rubensousa.raiflatbutton.RaiflatButton
+            style="@style/Base.Widget.AppCompat.Button.Colored"
                 android:id="@+id/btn_visit_blood_bank"
                 android:layout_below="@id/btn_upload_prescs"
                 android:text="Find Blood"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
-            <Button
+            <com.github.rubensousa.raiflatbutton.RaiflatButton
+                style="@style/Base.Widget.AppCompat.Button.Colored"
                 android:id="@+id/btn_logout"
                 android:layout_below="@id/btn_visit_blood_bank"
                 android:text="Logout"

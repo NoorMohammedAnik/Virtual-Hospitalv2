@@ -1,4 +1,4 @@
-package com.example.rr.virtual_hospital;
+package com.example.rr.virtual_hospital.firstaid;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
+
+import com.example.rr.virtual_hospital.R;
 
 public class FirstAiActivity extends AppCompatActivity {
 
@@ -25,13 +27,13 @@ public class FirstAiActivity extends AppCompatActivity {
         getSupportActionBar().setHomeButtonEnabled(true); //for back button
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);//for back button
         getSupportActionBar().setTitle("First Aid List");
-        FirstAid firstAid=new FirstAid(getApplicationContext(),groupName,pic);
-        listView.setAdapter(firstAid);
+        FirstAidAdapter firstAidAdapter =new FirstAidAdapter(getApplicationContext(),groupName,pic);
+        listView.setAdapter(firstAidAdapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
 
-                Intent intent = new Intent(FirstAiActivity.this, FirstAiDetActivity.class);
+                Intent intent = new Intent(FirstAiActivity.this, FirstAidDetailsActivity.class);
                 intent.putExtra("docName",groupName[position]);
                 Toast.makeText(getApplicationContext(), "" + groupName[position], Toast.LENGTH_SHORT).show();
                 startActivity(intent);

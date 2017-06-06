@@ -1,4 +1,4 @@
-package com.example.rr.virtual_hospital;
+package com.example.rr.virtual_hospital.ambulance;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
+
+import com.example.rr.virtual_hospital.R;
 
 public class AmbulanceActivity extends AppCompatActivity {
     ListView listView;

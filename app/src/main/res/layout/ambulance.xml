@@ -8,18 +8,19 @@
         android:id="@+id/imageViewAmbu"
         android:layout_width="100dp"
         android:layout_height="100dp"
+        android:padding="10dp"
         app:srcCompat="@drawable/ambulanceforlist"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentTop="true"/>
 
     <TextView
         android:id="@+id/textViewAmbu"
         android:layout_width="wrap_content"
+
         android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
         android:layout_alignBottom="@+id/imageViewAmbu"
         android:layout_marginBottom="39dp"
         android:layout_marginStart="33dp"
-        android:textColor="@android:color/black"
         android:layout_toEndOf="@+id/imageViewAmbu"
         android:text="TextView" />
 

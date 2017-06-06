@@ -1,18 +1,17 @@
-package com.example.rr.virtual_hospital;
+package com.example.rr.virtual_hospital.doctors;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.example.rr.virtual_hospital.hospital.HospitalDetailsActivity;
-import com.example.rr.virtual_hospital.hospital.HospitalListActivity;
+import com.example.rr.virtual_hospital.R;
 
-public class DocsActivity extends AppCompatActivity {
+public class DoctorsActivity extends AppCompatActivity {
     ListView listView;
     String[] docs_Name={"Prof. (Dr.) M.A. Faiz","Prof. (Dr.) Faridul Islam","Prof. (Dr.) Md. Gofranul Hoque","Dr. Md. Amir Hossain",
             "Dr. Anisul Awal","Dr. Mehrunnissa Khanom","Prof. (Dr.) Emran Bin Yunus","Dr. M.A. Kashem","Dr. Md. Abdul Quader","Prof. (Dr.) Md. Ridwanur Rahman","Dr. Md. Hasanuzzaman","Prof (Dr.) Mulkutur Rahman","Prof. Brig Gen. (Dr.) SK. Md. Bahar Hussain","Dr. Shamim Boksha",
@@ -22,14 +21,14 @@ public class DocsActivity extends AppCompatActivity {
             "Prof. (Dr.) Nil Kantha Bhatachharja","Prof. (Dr.) Md Zillur Rahman","Dr. Zeenat Meraj Chowdhury",
             "Prof. (Dr.) Wazir Ahmed","Dr. Ekramul Hoque","Dr. Rasheda Samad",
             "Prof. (Dr.) Shamsunnahar","Dr. Rowshan Morshed","Dr. Shahena Akter","Dr. Shoyela Shahnaz","Dr. Shamima Anwar","Dr. Sajjad Mohammed Yusuff","Prof. Aminuddin A Khan","Dr. Shaik Ahmed","Dr. Md. Qumrul Ahsan","Dr. Anisul Moula","Dr. Rehnuma Rashid","Dr. Syed Ahmed","Dr. Nasima Akter"};
-    int[] pic={R.drawable.fordocstethoscope};
+    int[] pic={R.drawable.my_doctor};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_docs);
         listView=(ListView)findViewById(R.id.listDoc);
-        CustomForDoc customForDoc= new CustomForDoc(getApplicationContext(),docs_Name,pic);
-        listView.setAdapter(customForDoc);
+        CustomDoctorsAdapter customDoctorsAdapter = new CustomDoctorsAdapter(getApplicationContext(),docs_Name,pic);
+        listView.setAdapter(customDoctorsAdapter);
         getSupportActionBar().setHomeButtonEnabled(true); //for back button
         getSupportActionBar().setHomeButtonEnabled(true); //for back button
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);//for back button
@@ -38,7 +37,7 @@ public class DocsActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
 
-                Intent intent = new Intent(DocsActivity.this, DocDetailsActivity.class);
+                Intent intent = new Intent(DoctorsActivity.this, DoctorsDetailsActivity.class);
                 intent.putExtra("docName", docs_Name[position]);
                 Toast.makeText(getApplicationContext(), "" + docs_Name[position], Toast.LENGTH_SHORT).show();
                 startActivity(intent);

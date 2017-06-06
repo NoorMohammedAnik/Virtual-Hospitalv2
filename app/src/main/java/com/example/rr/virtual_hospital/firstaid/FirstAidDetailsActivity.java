@@ -1,4 +1,4 @@
-package com.example.rr.virtual_hospital;
+package com.example.rr.virtual_hospital.firstaid;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -6,7 +6,9 @@ import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class FirstAiDetActivity extends AppCompatActivity {
+import com.example.rr.virtual_hospital.R;
+
+public class FirstAidDetailsActivity extends AppCompatActivity {
     ImageView place_img;
     TextView dis_name, dis_desc, dis_sym, what_to_do;
 
@@ -161,7 +163,7 @@ public class FirstAiDetActivity extends AppCompatActivity {
 
         if (getDocName.equals("Black Eye")) {
 
-            place_img.setImageResource(R.drawable.diaforlisdet);
+            place_img.setImageResource(R.drawable.firstaiddet);
             dis_name.setText(getDocName);
             dis_desc.setText("A black eye, periorbital hematoma, or shiner, is bruising around the eye commonly due to an injury to the face rather than to the eye. The name is given due to the color of bruising. The so-called black eye is caused by bleeding beneath the skin and around the eye.");
             dis_sym.setText("The symptoms of a black eye include bruising and swelling of the eyelid and soft tissue around the injured eye, sometimes accompanied by broken blood vessels along the white of the eye called subconjunctival haemorrhage. The discoloration starts out deep purple or blue. As the bruise resolves, it may turn green or yellow before disappearing.");
@@ -170,7 +172,7 @@ public class FirstAiDetActivity extends AppCompatActivity {
         }
         if (getDocName.equals("Branchial Cyst")) {
 
-            place_img.setImageResource(R.drawable.diaforlisdet);
+            place_img.setImageResource(R.drawable.firstaiddet);
             dis_name.setText(getDocName);
             dis_desc.setText("A branchial cleft cyst is a congenital epithelial cyst that arises on the lateral part of the neck usually due to failure of obliteration of the second branchial cleft (or failure of fusion of the second and third branchial arches) in embryonic development.");
             dis_sym.setText("A branchial cleft cyst usually doesn’t cause pain unless there’s infection. The signs of a branchial cleft cyst include:\n" +
@@ -185,7 +187,7 @@ public class FirstAiDetActivity extends AppCompatActivity {
 
         if (getDocName.equals("Breast Lumps In Women")) {
 
-            place_img.setImageResource(R.drawable.diaforlisdet);
+            place_img.setImageResource(R.drawable.firstaiddet);
             dis_name.setText(getDocName);
             dis_desc.setText("Breast lumps can be caused by infections, injuries, non-cancerous growths, and cancer. Breast cancer usually causes no pain in the breast. The symptoms of breast cancer include painless breast lumps, nipple discharge, and inflammation of the skin of the breast. ... The treatment of a breast lump depends on its cause");
             dis_sym.setText("There are many possible causes for a lump in your breast, including:\n" +
@@ -215,7 +217,7 @@ public class FirstAiDetActivity extends AppCompatActivity {
 
         if (getDocName.equals("Calcium, Elevated (Hypercalcemia)")) {
 
-            place_img.setImageResource(R.drawable.diaforlisdet);
+            place_img.setImageResource(R.drawable.firstaiddet);
             dis_name.setText(getDocName);
             dis_desc.setText("Hypercalcemia is a condition in which the calcium level in your blood is above normal. Too much calcium in your blood can weaken your bones, create kidney stones, and interfere with the way your heart and brain works. Hypercalcemia most commonly results from overactive parathyroid glands");
             dis_sym.setText("ou might not have any symptoms if you have mild hypercalcemia. If you have a more serious case, you might have symptoms that affect various parts of your body.\n" +
@@ -295,7 +297,7 @@ public class FirstAiDetActivity extends AppCompatActivity {
 
         if (getDocName.equals("Cellulite")) {
 
-            place_img.setImageResource(R.drawable.diaforlisdet);
+            place_img.setImageResource(R.drawable.firstaiddet);
             dis_name.setText(getDocName);
             dis_desc.setText("The condition is characterized by fat deposits under the skin that cause an uneven, lumpy, dimpled appearance. Cellulite is more common in women and usually occurs in a localized area of the body, such as on the stomach, thighs, hips, and buttocks");
             dis_sym.setText("Signs of cellulite are relatively easy to recognize. The condition is characterized by fat deposits under the skin that cause an uneven, lumpy, dimpled appearance.\n" +
@@ -309,7 +311,7 @@ public class FirstAiDetActivity extends AppCompatActivity {
 
         if (getDocName.equals("Chronic Cough")) {
 
-            place_img.setImageResource(R.drawable.diaforlisdet);
+            place_img.setImageResource(R.drawable.firstaiddet);
             dis_name.setText(getDocName);
             dis_desc.setText("A chronic cough is a cough that lasts eight weeks or longer in adults, or four weeks in children. A chronic cough is more than just an annoyance. ... While it can sometimes be difficult to pinpoint the problem that's triggering a chronic cough, the most common causes are tobacco use, postnasal drip, asthma and acid reflux.");
             dis_sym.setText("A chronic cough can occur with other signs and symptoms, which may include:\n" +
@@ -331,7 +333,7 @@ public class FirstAiDetActivity extends AppCompatActivity {
 
         if (getDocName.equals("Conjunctivitis (Pink Eye) ")) {
 
-            place_img.setImageResource(R.drawable.diaforlisdet);
+            place_img.setImageResource(R.drawable.firstaiddet);
             dis_name.setText(getDocName);
             dis_desc.setText("Pink eye (conjunctivitis) is an inflammation or infection of the transparent membrane (conjunctiva) that lines your eyelid and covers the white part of your eyeball. ... Pink eye is commonly caused by a bacterial or viral infection or an allergic reaction.");
             dis_sym.setText("    Redness in the white of the eye or inner eyelid.\n" +
@@ -350,7 +352,7 @@ public class FirstAiDetActivity extends AppCompatActivity {
 
         if (getDocName.equals("Deafness")) {
 
-            place_img.setImageResource(R.drawable.diaforlisdet);
+            place_img.setImageResource(R.drawable.firstaiddet);
             dis_name.setText(getDocName);
             dis_desc.setText("Hearing loss refers to a diminished ability to hear sounds like other people do, while deafness refers to the inability to understand speech through hearing even when sound is amplified. Profound deafness means the person cannot hear anything at all; they are unable to detect sound, even at the highest volume possible.");
             dis_sym.setText("Signs and symptoms of hearing loss may include:\n" +
@@ -368,7 +370,7 @@ public class FirstAiDetActivity extends AppCompatActivity {
 
         if (getDocName.equals("Dehydration")) {
 
-            place_img.setImageResource(R.drawable.diaforlisdet);
+            place_img.setImageResource(R.drawable.firstaiddet);
             dis_name.setText(getDocName);
             dis_desc.setText("Dehydration occurs when you use or lose more fluid than you take in, and your body doesn't have enough water and other fluids to carry out its normal functions. If you don't replace lost fluids, you will get dehydrated.");
             dis_sym.setText("    Increased thirst.\n" +
@@ -385,7 +387,7 @@ public class FirstAiDetActivity extends AppCompatActivity {
 
         if (getDocName.equals("Dengue Fever ")) {
 
-            place_img.setImageResource(R.drawable.diaforlisdet);
+            place_img.setImageResource(R.drawable.firstaiddet);
             dis_name.setText(getDocName);
             dis_desc.setText("Dengue fever is a disease caused by a family of viruses that are transmitted by mosquitoes. Symptoms of dengue fever include severe joint and muscle pain, swollen lymph nodes, headache, fever, exhaustion, and rash. The presence of fever, rash, and headache (the \"dengue triad\") is characteristic of dengue fever.");
             dis_sym.setText("    Sudden, high fever.\n" +
@@ -402,7 +404,7 @@ public class FirstAiDetActivity extends AppCompatActivity {
 
         if (getDocName.equals("Diarrhea")) {
 
-            place_img.setImageResource(R.drawable.diaforlisdet);
+            place_img.setImageResource(R.drawable.firstaiddet);
             dis_name.setText(getDocName);
             dis_desc.setText("Diarrhea, also spelled diarrhoea, is the condition of having at least three loose or liquid bowel movements each day. It often lasts for a few days and can result in dehydration due to fluid loss. Signs of dehydration often begin with loss of the normal stretchiness of the skin and irritable behaviour.");
             dis_sym.setText(" Diarrhea occurs because more fluid passes through the large intestine (colon) than that organ can absorb. As a rule, the colon can absorb several times more fluid than is required on a daily basis. However, when this reserve capacity is overwhelmed, diarrhea occurs.\n" +
@@ -428,7 +430,7 @@ public class FirstAiDetActivity extends AppCompatActivity {
 
         if (getDocName.equals("Diarrhea, Travelers (Traveler's Diarrhea)")) {
 
-            place_img.setImageResource(R.drawable.diaforlisdet);
+            place_img.setImageResource(R.drawable.firstaiddet);
             dis_name.setText(getDocName);
             dis_desc.setText("Traveler's diarrhea is a digestive tract disorder that commonly causes loose stools and abdominal cramps. It's caused by eating contaminated food or drinking contaminated water. ... ");
             dis_sym.setText("Abrupt onset of diarrhea\n" +
@@ -454,7 +456,7 @@ public class FirstAiDetActivity extends AppCompatActivity {
 
         if (getDocName.equals("Difficulty in Swallowing (Achalasia)")) {
 
-            place_img.setImageResource(R.drawable.diaforlisdet);
+            place_img.setImageResource(R.drawable.firstaiddet);
             dis_name.setText(getDocName);
             dis_desc.setText("People with achalasia will often have trouble swallowing or feel like food is stuck in their esophagus. This is also known as dysphagia. This symptom can cause coughing and raises the risk of aspiration, or inhaling or choking on food. Other symptoms include: pain or discomfort in your chest.");
             dis_sym.setText("The most common symptom of achalasia is difficulty swallowing. ... Other symptoms can include chest pain, regurgitation of swallowed food and liquid, heartburn, difficulty burping, a sensation of fullness or a lump in the throat, hiccups, and weight loss.");
@@ -467,7 +469,7 @@ public class FirstAiDetActivity extends AppCompatActivity {
 
         if (getDocName.equals("Dislocated Shoulder")) {
 
-            place_img.setImageResource(R.drawable.diaforlisdet);
+            place_img.setImageResource(R.drawable.firstaiddet);
             dis_name.setText(getDocName);
             dis_desc.setText("A dislocated shoulder is an injury in which your upper arm bone pops out of the cup-shaped socket that's part of your shoulder blade. The shoulder is the body's most mobile joint, which makes it susceptible to dislocation.");
             dis_sym.setText("    A visibly deformed or out-of-place shoulder.\n" +
@@ -482,7 +484,7 @@ public class FirstAiDetActivity extends AppCompatActivity {
         }
         if (getDocName.equals("Dizziness (Dizzy)")) {
 
-            place_img.setImageResource(R.drawable.diaforlisdet);
+            place_img.setImageResource(R.drawable.firstaiddet);
             dis_name.setText(getDocName);
             dis_desc.setText("Common causes of dizziness include a migraine, medications, and alcohol. It can also be caused by a problem in the inner ear, where balance is regulated. Dizziness is often a result of vertigo as well. The most common cause of vertigo and vertigo-related dizziness is benign positional vertigo (BPV).");
             dis_sym.setText("Some other possible causes of dizziness include:\n" +
@@ -504,7 +506,7 @@ public class FirstAiDetActivity extends AppCompatActivity {
         }
         if (getDocName.equals("Dry Mouth")) {
 
-            place_img.setImageResource(R.drawable.diaforlisdet);
+            place_img.setImageResource(R.drawable.firstaiddet);
             dis_name.setText(getDocName);
             dis_desc.setText("Dry mouth, or xerostomia (zeer-o-STOE-me-uh), refers to any condition in which your mouth is unusually dry. Most often, dry mouth is the result of a decrease in saliva produced by the glands in your mouth (salivary glands), and it's frequently a side effect of medication.");
             dis_sym.setText("\n" +
@@ -522,7 +524,7 @@ public class FirstAiDetActivity extends AppCompatActivity {
         }
         if (getDocName.equals("Ear Infection")) {
 
-            place_img.setImageResource(R.drawable.diaforlisdet);
+            place_img.setImageResource(R.drawable.firstaiddet);
             dis_name.setText(getDocName);
             dis_desc.setText("An ear infection (acute otitis media) is most often a bacterial or viral infection that affects the middle ear, the air-filled space behind the eardrum that contains the tiny vibrating bones of the ear. ... Ear infections frequently are painful because of inflammation and buildup of fluids in the middle ear.");
             dis_sym.setText("The onset of signs and symptoms of ear infection is usually rapid.\n" +
@@ -557,7 +559,7 @@ public class FirstAiDetActivity extends AppCompatActivity {
         }
         if (getDocName.equals("Elbow Pain")) {
 
-            place_img.setImageResource(R.drawable.diaforlisdet);
+            place_img.setImageResource(R.drawable.firstaiddet);
             dis_name.setText(getDocName);
             dis_desc.setText("Tennis elbow is a condition caused by inflammation of the tendons on the outer bony prominence (lateral epicondyle) of the elbow. Certain repetitive movements of the wrist can cause this condition. Tennis elbow can occur in anyone who strains the tendons of the forearm and is not limited to tennis players");
             dis_sym.setText("Elbow pain has many other causes including trauma, arthritis, and bursitis. Funny bone sensation is irritation of a nerve at the elbow that causes numbness and tingling of the inner elbow, forearm as well as little and ring fingers. Bacteria can infect the skin of a scraped (abraded) elbow to cause pain");
@@ -572,7 +574,7 @@ public class FirstAiDetActivity extends AppCompatActivity {
         }
         if (getDocName.equals("Electrical Burns (Burns)")) {
 
-            place_img.setImageResource(R.drawable.diaforlisdet);
+            place_img.setImageResource(R.drawable.firstaiddet);
             dis_name.setText(getDocName);
             dis_desc.setText("An electrical burn is a burn that results from electricity passing through the body causing rapid injury. ... Electrical burns differ from thermal or chemical burns in that they cause much more subdermal damage.");
             dis_sym.setText("    Burns or other wounds on your skin.\n" +
@@ -595,7 +597,7 @@ public class FirstAiDetActivity extends AppCompatActivity {
         }
         if (getDocName.equals("Fatigue")) {
 
-            place_img.setImageResource(R.drawable.diaforlisdet);
+            place_img.setImageResource(R.drawable.firstaiddet);
             dis_name.setText(getDocName);
             dis_desc.setText("Fatigue is generally defined as a feeling of lack of energy and motivation that can be physical, mental or both. Fatigue is not the same as drowsiness, but the desire to sleep may accompany fatigue. Apathy is a feeling of indifference that may accompany fatigue or exist independently.");
             dis_sym.setText("Fatigue can cause a vast range of other physical, mental and emotional symptoms including:\n" +
@@ -614,7 +616,7 @@ public class FirstAiDetActivity extends AppCompatActivity {
         }
         if (getDocName.equals("Fecal Incontinence")) {
 
-            place_img.setImageResource(R.drawable.diaforlisdet);
+            place_img.setImageResource(R.drawable.firstaiddet);
             dis_name.setText(getDocName);
             dis_desc.setText("Fecal incontinence is the inability to control bowel movements, causing stool (feces) to leak unexpectedly from the rectum. ... Common causes of fecal incontinence include diarrhea, constipation, and muscle or nerve damage");
             dis_sym.setText("Causes can include:\n" +
@@ -632,7 +634,7 @@ public class FirstAiDetActivity extends AppCompatActivity {
         }
         if (getDocName.equals("Fibrillation (Atrial Fibrillation)")) {
 
-            place_img.setImageResource(R.drawable.diaforlisdet);
+            place_img.setImageResource(R.drawable.firstaiddet);
             dis_name.setText(getDocName);
             dis_desc.setText("Atrial fibrillation (AF or A-fib) is an abnormal heart rhythm characterized by rapid and irregular beating. Often it starts as brief periods of abnormal beating which become longer and possibly constant over time.Most episodes have no symptoms. Occasionally there may be heart palpitations, fainting, lightheadedness, shortness of breath, or chest pain.The disease is associated with an increased risk of heart failure, dementia, and stroke. It is a type of supraventricular tachycardia.");
             dis_sym.setText("    Palpitations, which are sensations of a racing, uncomfortable, irregular heartbeat or a flip-flopping in your chest.\n" +
@@ -648,7 +650,7 @@ public class FirstAiDetActivity extends AppCompatActivity {
         }
         if (getDocName.equals("Optic Neuritis")) {
 
-            place_img.setImageResource(R.drawable.diaforlisdet);
+            place_img.setImageResource(R.drawable.firstaiddet);
             dis_name.setText(getDocName);
             dis_desc.setText("Optic neuritis is an inflammation that damages the optic nerve, a bundle of nerve fibers that transmits visual information from your eye to your brain. Pain and temporary vision loss in one eye are common symptoms of optic neuritis.");
             dis_sym.setText("The three most common symptoms of optic neuritis are:\n" +
@@ -661,7 +663,7 @@ public class FirstAiDetActivity extends AppCompatActivity {
         }
         if (getDocName.equals("Scars")) {
 
-            place_img.setImageResource(R.drawable.diaforlisdet);
+            place_img.setImageResource(R.drawable.firstaiddet);
             dis_name.setText(getDocName);
             dis_desc.setText("Types Of Scarring. Scars form when wounds heal from causes like burns, surgery, accidents, insect bites, and acne to name a few. Scar formation is a balance between the building up of collagen and the degradation of collagen in what are called healing cascades");
             dis_sym.setText("Scars occur at the site of tissue damage and appear as firm red to purple fibrous tissue that over time usually becomes flatter and lighter in color.");
@@ -672,7 +674,7 @@ public class FirstAiDetActivity extends AppCompatActivity {
         }
         if (getDocName.equals("Urticaria (Hives)")) {
 
-            place_img.setImageResource(R.drawable.diaforlisdet);
+            place_img.setImageResource(R.drawable.firstaiddet);
             dis_name.setText(getDocName);
             dis_desc.setText("Hives also known as urticaria, is a kind of skin rash with red, raised, itchy bumps. They may also burn or sting. Often the patches of rash move around. ... Hives frequently occur following an infection or as a result of an allergic reaction such as to medication, insect bites, or food.");
             dis_sym.setText("    Batches of red or white welts (wheals), usually on the face, trunk, arms or legs.\n" +
