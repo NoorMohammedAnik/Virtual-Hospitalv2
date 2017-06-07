@@ -8,13 +8,13 @@
          location permissions for the 'MyLocation' functionality. 
     -->
 
-    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.SEND_SMS" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
         android:allowBackup="true"
@@ -25,18 +25,20 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".profile.VbActivity" />
         <activity android:name=".firstaid.FirstAiActivity" />
-        <activity android:name=".firstaid.FirstAidDetailsActivity"/>
+        <activity android:name=".firstaid.FirstAidDetailsActivity" />
         <activity android:name=".emergency_sms.EmergencySms" />
         <activity android:name=".diagonostic.DiagonosticActivity" />
-        <activity android:name=".hospital.HospitalDetailsActivity"/>
-        <activity android:name=".diagonostic.DiagonosticDetailsActivity"/>
-        <activity android:name=".doctors.DoctorsDetailsActivity"/>
-        <activity android:name=".hospital.HospitalListActivity"/>
-        <activity android:name=".profile.SignUp"/>
-        <activity android:name=".doctors.DoctorsActivity"/>
-        <activity android:name=".ambulance.AmbulanceActivity"/>
-        <activity android:name=".ambulance.AmbulanceDetActivity"/>
-        <activity android:name=".SplashActivity"
+        <activity android:name=".hospital.HospitalDetailsActivity" />
+        <activity android:name=".diagonostic.DiagonosticDetailsActivity" />
+        <activity android:name=".doctors.DoctorsDetailsActivity" />
+        <activity android:name=".hospital.HospitalListActivity" />
+        <activity android:name=".profile.SignUp" />
+        <activity android:name=".doctors.DoctorsActivity" />
+        <activity android:name=".ambulance.AmbulanceActivity" />
+        <activity android:name=".ambulance.AmbulanceDetActivity" />
+        <activity android:name=".nav_drawer.Main_Nav" />
+        <activity
+            android:name=".SplashActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
             <intent-filter>
