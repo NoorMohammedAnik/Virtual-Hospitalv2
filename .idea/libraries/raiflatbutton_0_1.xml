@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="raiflatbutton-0.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/a7154b4b51c9ceb0594f7b322f1c496328cdd3fa/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/a7154b4b51c9ceb0594f7b322f1c496328cdd3fa/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.rubensousa/raiflatbutton/0.1/19a9ac5bd2728a4ee0449809cc6b913a10787886/raiflatbutton-0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
